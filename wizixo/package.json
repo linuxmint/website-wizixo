@@ -6,10 +6,10 @@
   "description": "creative multi-purpose template",
   "main": "index.html",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.14.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
