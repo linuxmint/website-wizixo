@@ -1,0 +1,35 @@
+// Bootstrap Variables
+@import "../vendor/bootstrap/scss/functions";
+@import "../vendor/bootstrap/scss/variables";
+
+// Wizixo variables and mixins 
+@import "variables";
+@import "mixins";
+
+// User Variables
+@import "user-variables";
+
+// Bootstrap core
+@import "../vendor/bootstrap/scss/bootstrap";
+
+// Extended Bootstrap components
+@import "custom/dropdowns";
+@import "custom/navbar";
+@import "custom/nav";
+@import "custom/buttons";
+@import "custom/list-group";
+@import "custom/tab";
+
+// Wizixo Core CSS
+@import "core/general";
+@import "core/helpers";
+@import "core/header";
+@import "core/footer";
+@import "core/portfolio";
+@import "core/blog";
+
+// Wizixo Components 
+@import "components";
+
+// In this scss you can write your scss
+@import "user";

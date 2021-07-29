@@ -1,0 +1,164 @@
+/* team */ 
+.team{ 
+	overflow: hidden; 
+}
+.team-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  .team-desc {
+    padding: 15px 10px 10px;
+  }
+  .team-name {
+    margin: 0;
+  }
+  .team-name a {
+    display: block;
+    color: $gray-600;
+  }
+  .team-name a:hover {
+    color: $primary;
+  }
+  .team-position {
+    font-size: $font-size-xs;
+    color: $primary;
+  }
+  p {
+    margin: 10px 0px 10px;
+  }
+}
+
+/*team hover*/
+.team.team-overlay .team-item {
+  &:hover .team-avatar {
+    @include transition-animation (all, 1s, ease-in-out);
+    overflow: hidden;
+    position: relative;
+  }
+  .team-avatar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    @include linear-gradient($grad-start, $grad-end, 150deg);
+		@include transition-animation (all, 0.5s, ease-in-out);
+  }
+  &:hover .team-avatar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    visibility: visible;
+    overflow: hidden;
+    @include linear-gradient($grad-start, $grad-end, 150deg);
+		@include transition-animation (all, 0.5s, ease-in-out);
+  }
+}
+
+
+/*team bordered*/
+.team.team-bordered .team-desc {
+  border: 1px solid $gray-200;
+  border-top: 0;
+}
+
+/*Team grid*/
+.team.team-grid {
+  .team-avatar {
+    width: 50%;
+    float: left;
+  }
+  .team-desc {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+  }
+  .social-icons {
+    position: absolute;
+    bottom: 0;
+  }
+  .team-desc p {
+    padding-bottom: 30px;
+  }
+}
+
+/*social icon on hover*/
+.team.social-hover .team-item {
+  .team-avatar {
+    position: relative;
+    overflow: hidden;
+  }
+  .team-desc .social-icons {
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    visibility: hidden;
+    z-index: 99;
+    @include transition-animation;
+  }
+}
+
+.team.social-hover .team-item {
+  .social-icons-item {
+    display: block;
+    margin-left: -50px;
+    @include transition-animation (all, 0.5s, ease-in-out);
+    a {
+      color: $white;
+    }
+  }
+  &:hover .social-icons {
+    visibility: visible;
+    left: 5px;
+    @include transition-animation;
+  }
+}
+
+.team.social-hover .team-item:hover .social-icons-item {
+  &:nth-child(1) {
+    margin-left: 0px;
+    @include transition-animation (all, 0.5s, ease-in-out);
+  }
+  &:nth-child(2) {
+    margin-left: 0px;
+    @include transition-animation (all, 0.7s, ease-in-out);
+  }
+  &:nth-child(3) {
+    margin-left: 0px;
+    @include transition-animation (all, 1s, ease-in-out);
+  }
+  &:nth-child(4) {
+    margin-left: 0px;
+    @include transition-animation (all, 1.3s, ease-in-out);
+  }
+  &:nth-child(5) {
+    margin-left: 0px;
+    @include transition-animation (all, 1.5s, ease-in-out);
+  }
+}
+
+@include media-breakpoint-down(sm) {
+
+  .team.team-grid {
+    .team-avatar {
+      width: 100%;
+      float: none;
+    }
+    .team-desc {
+      width: 100%;
+      float: none;
+      padding: 15px 0px 10px;
+    }
+	}
+
+}

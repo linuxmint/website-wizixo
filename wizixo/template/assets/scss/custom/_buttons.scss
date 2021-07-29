@@ -1,0 +1,169 @@
+
+//
+// Bootstrap buttons overrides
+//
+
+/*buttons*/
+.btn {
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 6px;
+  outline: 0;
+  white-space: nowrap;
+  @include transition-animation;
+  i {
+    margin-right: 10px;
+  }
+}
+.btn-xs{
+  padding: 0.4rem 0.6rem;
+  font-size: 0.6rem;
+  line-height: 1.2;
+  border-radius: $btn-border-radius;
+}
+
+//button white
+.btn-white {
+  background: $white;
+  color: $gray-800 !important;
+  &.active, &:active, &:focus, &:hover {
+    color: $gray-800;
+    background: $gray-200;
+  }
+  i{
+    color: $gray-800 !important;
+  }
+}
+.btn-outline-white {
+  background: transparent;
+  border-color: $white;
+  color: $white;
+  &.active, &:active, &:focus, &:hover {
+    color: $gray-800;
+    background: $white;
+  }
+}
+
+.btn-outline-light{
+  background: transparent;
+  border-color: $gray-400;
+  color: $gray-500;
+}
+.btn-outline-light:hover{
+  background: $gray-400;
+  border-color: $gray-400;
+  color: $gray-800;
+}
+
+//button gradient
+.btn-grad {
+  color: $white;
+  @include linear-gradient-btn($grad-end, $grad-start, $grad-end, 150deg);
+  @include transition-animation;
+  background-size: 260% 100%;
+  background-position: right bottom;
+  border: 0;
+  line-height: 1.92;
+  
+  &.active, &:active, &:focus, &:hover {
+    color: $white;
+    background-position: left bottom;
+  }
+  &.btn-sm{
+    line-height: $line-height-sm + .4;
+  }
+}
+
+
+//button outline gradient
+.btn-outline-grad {
+  border: none;
+  line-height: 2;
+  display: inline-block;
+  background: transparent;
+  border-radius: $border-radius;
+  color: $primary;
+  position: relative;
+  z-index: 1;
+  &:before, &:after {
+    content: ' ';
+    position: absolute;
+    border-radius: $border-radius;
+  }
+  &:before {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    background-color: $primary;
+    @include linear-gradient-btn($grad-end, $grad-start, $grad-end, 150deg);
+    background-size: 260% 100% !important;
+    background-position: right bottom !important;
+  }
+  &:after {
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: $white;
+    z-index: -1;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+  }
+  &:hover:after {
+    opacity: 0;
+  }
+  &.active, &:active, &:focus, &:hover {
+    color: $white !important;
+  }
+}
+
+
+// btn link border animation
+.btn-link {
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px $link-hover-color;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 100% 50%;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+  }
+}
+
+//button round
+.btn-round{
+  height: 46px;
+  width: 46px;
+  line-height: 46px;
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+  i{
+    margin:0; 
+    padding-left: 3px;
+  }
+  &.btn-lg{
+    height: 62px;
+    width: 62px;
+    line-height: 60px;
+  }
+  &.btn-sm{
+    height: 34px;
+    width: 34px;
+    line-height: 30px;
+    i{
+      font-size: .6rem;
+    }
+  }
+}
+
+
+
+

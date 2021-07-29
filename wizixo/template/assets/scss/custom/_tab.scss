@@ -1,0 +1,100 @@
+//
+// Bootstrap Tab overrides
+//
+
+/* Tab */
+.tab-content {
+  padding: 25px 0;
+  margin-bottom: 20px;
+}
+
+.nav-tabs {
+  .nav-item .nav-link {
+    color: $gray-800;
+    padding: 0.5rem 1rem;
+  }
+  .nav-link.active {
+    background: $primary;
+    color: $white;
+    .nav-link {
+      color: $white;
+    }
+  }
+}
+
+
+/*tab-line*/
+.nav-tabs.tab-line {
+  border-bottom: solid 2px $gray-200;
+  .nav-link {
+    border: transparent;
+  }
+  .nav-item:first-child .nav-link {
+    padding-left: 0;
+  }
+  .nav-link {
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    &.active {
+      background: transparent;
+      color: $primary;
+      border-bottom: 2px solid $primary;
+    }
+  }
+  .nav-item {
+    margin-bottom: -2px;
+  }
+}
+
+/*tab-bordered*/
+.nav-tabs.tab-bordered {
+  border: 1px solid $gray-200;
+  .nav-link {
+    border: transparent;
+    &.active {
+      background: $primary;
+      color: $white;
+      border-radius: 0;
+    }
+  }
+}
+
+/*tab-dark*/
+.nav-tabs.tab-dark {
+  .nav-item .nav-link {
+    color: $gray-800;
+  }
+  .nav-link.active {
+    background: $gray-800;
+    color: $white;
+  }
+}
+/*tab-gradient*/
+.nav-tabs.tab-grad {
+  border: none;
+  border-radius: 40px;
+  .nav-link {
+    border: transparent;
+    margin-right: 10px;
+    border-radius: 40px;
+    @include transition-animation;
+    &.active {
+      border-radius: 40px;
+      color: $white;
+      @include linear-gradient($grad-start, $grad-end, 150deg);
+    }
+  }
+}
+
+/*tab-with-icon*/
+.nav-tabs.tab-with-icon i {
+	padding-right: 5px;
+}
+
+/*tab-with-icon*/
+.nav-tabs.tab-with-center-icon i {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	padding: 5px;
+}

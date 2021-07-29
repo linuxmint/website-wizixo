@@ -1,0 +1,40 @@
+/*===============================
+					FOOTER 	
+=================================*/
+footer .footer-logo img, 
+footer .footer-logo-item {
+	height: 50px;
+  text-align: left;
+  max-width: 100%;
+  width: auto;
+}
+
+footer .newsletter-icon {
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+	font-size: 80px;
+	color: rgba(0, 0, 0, 0.1) !important;
+}
+
+footer .widget {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+/*footer dark*/
+.footer-dark {
+	background: $gray-800;
+}
+
+.footer-dark *,
+.footer-dark .widget a
+ {
+	color: #d5d5d5;
+}
+
+.footer-dark .widget a:hover {
+	color: $primary;
+}
+
+ 

@@ -1,0 +1,285 @@
+/*===============================
+           HEADER  
+=================================*/
+
+/*TOP BAR*/
+.navbar-top {
+  border-bottom: 1px solid $border-color;
+  padding: .2rem 0;
+  span{
+    font-size: $font-size-xs;
+    color: $gray-600;
+  }
+  a {
+    color: $gray-600;
+    font-size: $font-size-xs;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+header {
+  position: relative;
+  z-index: 99;
+}
+/*header transparent*/
+.navbar-transparent {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+// Navbar on dark bg
+.navbar-dark .navbar-top{
+  span{
+    color: $white;
+  }
+  a {
+    color: $white;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+.navbar-dark.navbar-sticky-on{
+  background-color: $gray-800;
+}
+
+@include media-breakpoint-down(md) {
+  .navbar-dark .navbar-collapse .nav-link{
+  color: $gray-600;
+  }
+}
+
+// Navbar on primary bg
+.navbar-primary .navbar-top{
+  span{
+    color: $white;
+  }
+  a {
+    color: $white;
+    &:hover {
+      color: $gray-800;
+    }
+  }
+}
+.navbar-primary.navbar-sticky-on{
+  background-color: $primary;
+}
+
+@include media-breakpoint-down(md) {
+  .navbar-primary .navbar-collapse .nav-link{
+  color: $gray-600;
+  }
+}
+
+// header floating
+.navbar-floating{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  .navbar > .container{
+    background: $white;
+    border-radius: $border-radius;
+  }
+}
+@include media-breakpoint-down(md) {
+  .navbar-floating .navbar > .container{
+    padding: 0 15px !important;
+  }
+  .navbar-sticky-on.navbar-floating .navbar > .container{
+    padding: 0 !important;
+  }
+}
+
+
+/*Header sticky*/
+header.navbar-sticky-on {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  -webkit-animation: fadeInDown .5s;
+  animation: fadeInDown .5s;
+  width: 100%;
+  box-shadow: 0px 0px 40px rgba(83, 88, 93, 0.2);
+  .navbar-top {
+    display: none !important;
+  }
+  .navbar-nav .nav-link {
+    line-height: $sticky-nav-link-line-height;
+  }
+  .navbar-brand {
+    padding-top: $sticky-navbar-brand-padding-y;
+    padding-bottom: $sticky-navbar-brand-padding-y;
+    .navbar-brand-item{
+      height: $sticky-navbar-brand-height;
+    }
+  }
+}
+
+
+
+@include media-breakpoint-down(md) {
+ .navbar-nav .nav-link {
+    line-height: $mobile-nav-link-line-height;
+  }
+
+  .navbar-brand {
+    padding-top: $mobile-navbar-brand-padding-y;
+    padding-bottom: $mobile-navbar-brand-padding-y;
+    .navbar-brand-item{
+      height: $mobile-navbar-brand-height;
+    }
+  }
+
+  header .search i{
+    vertical-align: middle;
+  }
+  header.navbar-sticky-on .navbar-nav .nav-link {
+    line-height: 40px;
+  }
+
+}
+
+
+/*megamenu dropdown menu full width in container fluid*/
+.navbar .container-fluid .megamenu .dropdown-menu{
+  width: 100%;
+}
+
+/*===============================
+     HAMBURGER MENU(Home 10)
+=================================*/
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  .hamburger-inner {
+    position: absolute;
+    right: -80px;
+    top: -80px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: $white;
+    border-radius: 50% 50% 50% 50%;
+    @include transition-animation (all, 0.7s, ease-in-out)
+    box-shadow: 0 0 0 0 $white, 0 0 0 0 $white;
+    cursor: pointer;
+  }
+}
+
+.hamburger-menu .hamburger-icon {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: $gray-800;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+
+  @include transition-animation (all, 0.5s, ease-in-out)
+  &:after,&:before {
+    @include transition-animation (all, 0.5s, ease-in-out)
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: $gray-800;
+  }
+}
+
+.hamburger-menu .hamburger-icon {
+  &:before {
+    top: -10px;
+  }
+
+  &:after {
+    bottom: -10px;
+  }
+}
+
+.hamburger-menu input {
+  display: none;
+
+  &:checked + .hamburger-inner {
+    box-shadow: 0 0 0 100vw $white, 0 0 0 100vh $white;
+    border-radius: 0;
+  }
+}
+
+.hamburger-menu input:checked + .hamburger-inner .hamburger-icon {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  &:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+  &:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+  }
+}
+
+.hamburger-menu label {
+  input:checked + .hamburger-inner + ul {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+
+    @include transition-animation (all, 0.8s, ease-in-out)
+    li {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  a {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    display: block;
+    color: $gray-800;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+
+  @include media-breakpoint-down(xs){
+  .hamburger-menu label .hamburger-inner {
+    right: -100px;
+    top: -100px;
+  }
+}

@@ -1,0 +1,131 @@
+/*accordion*/
+.accordion {
+  margin-bottom: 30px;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+}
+
+.accordion-title {
+  background-color: $gray-200;
+  a {
+    position: relative;
+    display: block;
+    padding: 15px 40px 15px 15px;
+    color: $gray-800;
+    @include transition-animation (all, 0s, ease-in-out);
+    &:after {
+      content: "\f068";
+      font-family: 'Fontawesome';
+      position: absolute;
+      top: 50%;
+      line-height: 1.8;
+      font-weight: $font-weight-bolder;
+      font-size: 10px;
+      right: 8px;
+      padding: 15px;
+      color: $gray-800;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    &.collapsed:after {
+      content: "\f067";
+    }
+  }
+}
+
+.accordion-content {
+  padding: 16px 16px 0;
+}
+
+/*accordion primary color*/
+.accordion-primary .accordion-title {
+  background: $primary;
+  a {
+    color: $white;
+    &:after {
+      color: $white;
+    }
+  }
+}
+
+/*accordion dark*/
+.accordion-dark .accordion-title {
+  background: $gray-800;
+  a {
+    color: $white;
+    &:after {
+      color: $white;
+    }
+  }
+}
+
+/*accordion gradient color*/
+.accordion-grad .accordion-title {
+  a {
+    @include linear-gradient($grad-start, $grad-end, 150deg);
+  }
+  a {
+    color: $white;
+    &:after {
+      color: $white;
+    }
+    &.collapsed {
+      background: $gray-200;
+      color: $gray-800;
+      &:after {
+        color: $gray-800;
+      }
+    }
+  }
+}
+
+/*accordion line*/
+.accordion-line {
+  .accordion-item {
+    &:first-child {
+      border-top: 2px solid $border-color;
+    }
+    border-bottom: 2px solid $border-color;
+    margin-bottom: 0;
+  }
+  .accordion-content {
+    padding: 0px 16px 16px 0;
+  }
+  .accordion-title {
+    background: transparent;
+    a {
+      color: $gray-800;
+      padding-left: 0;
+    }
+  }
+}
+
+/*toggle icon left*/
+.accordion {
+  &.toggle-icon-left .accordion-title a {
+    padding-left: 40px;
+    padding-right: 15px;
+    &:after {
+      left: 0;
+      right: auto;
+    }
+  }
+  &.toggle-icon-round .accordion-title a {
+    &:after {
+      background: $primary;
+      color: $white;
+      padding: 10px;
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      line-height: 7px;
+      text-align: center;
+    }
+    &.collapsed:after {
+      background: $gray-200;
+      color: $gray-800;
+    }
+  }
+}

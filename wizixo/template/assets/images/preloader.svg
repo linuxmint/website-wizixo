@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg width="300" height="300"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 288" style="enable-background:new 0 0 560 288;" xml:space="preserve">
+
+<!-- change background Gradient color below -->
+<defs>
+  <linearGradient id="BgGradient">
+      <stop offset="5%"  stop-color="#2ab9a5"/>
+      <stop offset="95%" stop-color="#97c74e"/>
+  </linearGradient>
+</defs>
+
+<!-- change border and center element color below -->
+<style type="text/css">
+	.border-color{stroke:#4cbd89; fill:none; stroke-miterlimit:10; stroke-dasharray:12.2685,12.2685; }
+	.center-element{fill:#FFFFFF;}
+</style>
+
+
+<g>
+<circle class="border-color" cx="280" cy="144" r="82">
+<animateTransform attributeName="transform"
+	attributeType="XML"
+	type="rotate"
+	from="0 280 144"
+	to="360 280 144"
+	dur="10s"
+	repeatCount="indefinite" />
+</circle>
+</g>
+
+<circle fill="url(#BgGradient)" cx="280" cy="144" r="58.4"/>
+
+<path class="center-element" d="M263.5,156.8L263.5,156.8c-2.4,0-4.5-2-4.5-4.5V132c0-2.4,2-4.5,4.5-4.5l0,0c2.4,0,4.5,2,4.5,4.5v20.4
+	C268,154.8,266,156.8,263.5,156.8z">
+
+	<animateTransform attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		dur="1s"
+		values="0,10;0,-10;0,10"
+		repeatCount="indefinite"/>
+</path>
+
+<path class="center-element" d="M280,156.8L280,156.8c-2.4,0-4.5-2-4.5-4.5V132c0-2.4,2-4.5,4.5-4.5l0,0c2.4,0,4.5,2,4.5,4.5v20.4
+	C284.5,154.8,282.5,156.8,280,156.8z">
+
+	<animateTransform attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		dur="1s"
+		values="0,10;0,-10;0,10"
+		repeatCount="indefinite"
+		begin="0.1s"/>
+</path>
+
+<path class="center-element" d="M296.8,156.8L296.8,156.8c-2.4,0-4.5-2-4.5-4.5V132c0-2.4,2-4.5,4.5-4.5h0c2.4,0,4.5,2,4.5,4.5v20.4
+	C301.2,154.8,299.2,156.8,296.8,156.8z">
+
+	<animateTransform attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		dur="1s"
+		values="0,10;0,-10;0,10"
+		repeatCount="indefinite"
+		begin=".2s"/>
+</path>
+</svg>

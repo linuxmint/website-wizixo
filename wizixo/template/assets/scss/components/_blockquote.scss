@@ -1,0 +1,108 @@
+/*blockquote*/ 
+
+.blockquote {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 20px;
+  &:before {
+    content: '“';
+    font-family: "arial";
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size: 100px;
+    line-height: 0.9em;
+    font-weight: $font-weight-bold;
+    color: $primary;
+    font-size: 120px;
+  }
+  cite {
+    font-size: $font-size-base;
+  }
+}
+
+/*bg-primary*/
+.blockquote.bg-primary {
+  background: $primary;
+  color: $white;
+  padding: 20px 20px 20px 90px;
+  * {
+    color: $white;
+  }
+  &:before {
+    color: $white !important;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/*bg-dark*/
+.blockquote.bg-dark {
+  padding: 20px 20px 20px 90px;
+  * {
+    color: $white;
+  }
+  &:before {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/*bg-grad*/
+.blockquote.bg-grad {
+  padding: 20px 20px 20px 90px;
+  * {
+    color: $white;
+  }
+  &:before {
+    color: $white !important;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/*bg-light*/
+.blockquote.bg-light {
+  padding: 20px 20px 20px 90px;
+  &:before {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/*primary-line*/
+.blockquote.primary-line {
+  padding: 10px 20px;
+  border-left: 5px solid $primary;
+  &:before {
+    display: none;
+  }
+}
+
+/*gray-line*/
+.blockquote.gray-line {
+  padding: 10px 20px;
+  border-left: 5px solid $gray-200;
+  &:before {
+    display: none;
+  }
+}
+
+/*grad-line*/
+.blockquote.grad-line {
+  padding: 10px 20px;
+  &:before {
+    display: none;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    @include linear-gradient($grad-start, $grad-end, 150deg);
+  }
+}

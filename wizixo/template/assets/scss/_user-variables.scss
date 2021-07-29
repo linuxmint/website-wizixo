@@ -1,0 +1,35 @@
+// Should you need to add your custom variable or you need to override our theme variables from _variables.SCSS, then we highly recommend that you add the code into this file so that whenever theme update is available and you update the theme, You will not lose your hard work :)
+
+// Below given example is for how to overrides core variables. Uncomment the code, after compilation, You will see the color scheme changes on frontend.
+
+// User Variables
+
+// $primary:     #066af9;
+
+// $theme-colors: ();
+// $theme-colors: map-merge(
+//   (
+//     "primary":    $primary,
+//     "secondary":  $secondary,
+//     "success":    $success,
+//     "info":       $info,
+//     "warning":    $warning,
+//     "danger":     $danger,
+//     "light":      $light,
+//     "dark":       $dark
+//   ),
+//   $theme-colors
+// );
+
+// //Theme gradient Colors - Starting and ending point
+// $grad-start:      #0047ab;
+// $grad-end:        #066af9;
+
+// $link-color: $primary;
+// $link-hover-color:          darken($link-color, 10%);
+
+// $navbar-light-hover-color:          $primary;
+// $navbar-light-active-color:         $primary;
+
+// $dropdown-link-hover-color:         $primary !important;
+// $dropdown-link-active-color:        $primary;

@@ -1,0 +1,154 @@
+/* skill */
+.skill-item {
+  overflow: hidden;
+  p {
+    margin: 10px 0 8px;
+  }
+  .progress {
+    background: $gray-200;
+    border-radius: $border-radius;
+    box-shadow: none;
+    height: 10px;
+    margin-bottom: 8px;
+    overflow: visible;
+  }
+  .progress-bar {
+    background-color: $primary;
+    border-radius: $border-radius;
+    box-shadow: none;
+    position: relative;
+  }
+  .skill-percent {
+    color: $gray-600;
+    font-weight: $font-weight-bold;
+    line-height: 24px;
+    position: absolute;
+    right: 0;
+    top: -28px;
+    font-size: 12px;
+  }
+}
+
+/*skill gradient*/
+.skill {
+  &.skill-grad .progress-bar {
+    @include linear-gradient($grad-start, $grad-end, 150deg);
+  }
+  &.skill-dark-grad .progress-bar {
+    background: $gray-800;
+    @include linear-gradient($gray-800, lighten($gray-800, 20%), 150deg);
+  }
+}
+
+/*skill dark*/
+.skill.skill-dark .progress-bar {
+  background: $gray-800;
+}
+
+/*skill square*/
+.skill.skill-square {
+  .progress-bar, .progress {
+    border-radius: 0px;
+  }
+}
+
+/*skill percent*/
+.skill.percent-bg .skill-percent {
+  background: $gray-800;
+  padding: 2px 5px;
+  border-radius: 2px;
+  color: $white;
+  line-height: 16px;
+  position: absolute;
+  right: 0;
+  top: -25px;
+  font-size: 12px;
+  &:before {
+    border-top-color: $gray-800;
+    border-width: 5px;
+    left: 50%;
+    margin-left: -5px;
+  }
+  &:after, &:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after {
+    border-top-color: $gray-800;
+    border-width: 4px;
+    left: 50%;
+    margin-left: -4px;
+  }
+}
+
+/*percent light*/
+.skill.percent-light  .skill-percent {
+  background: $gray-200;
+  color: $gray-600;
+  &:before, &:after {
+    border-top-color: $gray-200;
+  }
+}
+
+/*Skill size*/
+.skill {
+  &.skill-xs .progress {
+    height: 3px;
+  }
+  &.skill-sm .progress {
+    height: 5px;
+  }
+  &.skill-md .progress {
+    height: 10px;
+  }
+  &.skill-lg .progress {
+    height: 16px;
+  }
+  &.skill-xl .progress {
+    height: 20px;
+  }
+}
+
+/*skill-text-in*/
+.skill.skill-text-in .skill-item {
+  .progress {
+    height: 24px;
+    .skill-percent {
+      color: $white;
+      padding-right: 5px;
+      top: 0px;
+    }
+  }
+  p {
+    font-size: $font-size-xs;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    color: $white;
+    top: 2px;
+    left: 5px;
+  }
+  position: relative;
+  margin-top: 10px;
+}
+
+.skill.skill-text-in .progress-bar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  opacity: 0.1;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+  -webkit-background-size: 22px 22px;
+  background-size: 22px 22px;
+}

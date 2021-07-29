@@ -1,0 +1,189 @@
+/*
+
+Brand color: #066af9 - Blue
+Gradient colors: #0047ab and #066af9
+Brand dark color: #2751e4
+
+*/
+
+/* Highlight Color */
+::selection { color: #fff; background: #066af9; }
+::-moz-selection { color: #fff; background: #066af9; }
+.bg-brand, .bg-grad::selection { color: #066af9; background: #fff; }
+.bg-brand, .bg-grad::-moz-selection { color: #066af9; background: #fff; }
+
+/* Color */
+a, .navbar-top a:hover, .dropdown-item:active, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .btn-link, .portfolio-card .portfolio-card-body .portfolio-card-footer .info-title a:hover, .post .post-info a:hover, .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active, .icon-primary i:before, .footer-dark .widget a:hover, .portfolio .nav .nav-tabs .nav-filter.active, .team-item .team-position, .list-group-item-action:hover, .list-group-item-action:focus, .hamburger-menu label a:hover, .breadcrumb .breadcrumb-item a:hover i, .post-item .post-item-desc .post-meta a:hover, .post-item .post-item-desc h4 a:hover, .post-item .item-link:hover, .post-item .post-quote > blockquote:before, .page-link:hover, .sidebar .widget .widget-post .details a:hover, .sidebar .widget a:hover, .list-group-borderless a.list-group-item:hover, .tags a:hover, .post-navigation .post-prev:hover:before, .post-navigation .post-prev:hover h6, .post-navigation .post-prev:hover p, .post-navigation .post-next:hover:before, .post-navigation .post-next:hover h6, .post-navigation .post-next:hover p, .post-navigation .all-post:hover, .blockquote:before, .btn-outline-grad { color: #066af9; }
+
+/* Checkbox */
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #066af9;
+    border-color: #066af9;
+    background-color: #066af9;
+}
+
+/* Navbar Dark link colors */
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus { color: #066af9; }
+.list-group-icon-primary-bg i { background-color: #d4e6ff; color: #066af9; }
+
+.btn-link:hover, a:hover { color: #2751e4; }
+.post .post-tag a:hover, .portfolio-style-2 .portfolio-card .portfolio-card-footer .info-title a:hover, .portfolio .nav .nav-tabs-style-3 .nav-filter.active, .portfolio .nav .nav-tabs-style-2 .nav-filter.active, .portfolio .nav .nav-tabs-style-4 .nav-filter.active { color: #ffffff; }
+a.text-primary:hover, a.text-primary:focus, .primary-hover li:hover {
+    color: #0361e5 !important;
+}
+
+.nav-tabs.tab-line .nav-link.active {
+    color: #066af9;
+    border-bottom: 2px solid #066af9;
+}
+
+/* Color important */
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item.active, .primary-hover a:hover, .text-primary, a.primary-hover:hover { color: #066af9 !important; }
+
+/* Primary Button */
+.btn-outline-primary {
+    color: #066af9;
+    border-color: #066af9;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #066af9;
+    border-color: #066af9;
+}
+
+/* Background */
+.navbar-primary.navbar-sticky-on { background-color: #0047ab; }
+.owl-carousel.dots-primary .owl-dots .owl-dot span {
+    box-shadow: inset 0 0 0 2px #066af9;
+}
+.owl-carousel.dots-primary .owl-dots .owl-dot span:after, .cd-headline.big-clip .cd-words-wrapper::after { background-color: #066af9; }
+.bg-primary { background: #066af9 !important; }
+.accordion.toggle-icon-round .accordion-title a:after { background: #066af9; }
+.accordion-primary .accordion-title, .cd-headline.clip .cd-words-wrapper::after, .cd-headline.loading-bar .cd-words-wrapper::after { background: #066af9; }
+
+.btn-primary { background: #066af9; border-color: #066af9; }
+.btn-primary:hover { background: #0047ab; border-color: #0047ab; }
+.skill-item .progress-bar, .nav-tabs .nav-link.active, .nav-tabs.tab-bordered .nav-link.active { background-color: #066af9; }
+
+/* Border Color */
+.form-control:focus, .feature-box.f-style-3:hover { border-color: #066af9; }
+.btn-link:after { border-bottom: solid 2px #2751e4; }
+.primary-border-left-dotted {
+    border-left: dashed 1px #066af9;
+}
+.testimonials.testimonials-border .testimonials-wrap:hover .testi-text p { border: 3px solid #066af9; }
+.testimonials.testimonials-border .testimonials-wrap:hover .testi-text p:before {
+    border-color: #066af9 transparent transparent;
+}
+.tags a:hover {
+    border: 1px solid #066af9;
+}
+.portfolio .nav .nav-tabs-style-1 .nav-filter.active { border-color: #066af9; }
+.blockquote.primary-line {
+    border-left: 5px solid #066af9;
+}
+
+/* Gradient Text */
+.text-grad, .counter-grad-text .counter-item-icon, .counter-grad-text .counter-item-digit {
+	background: -moz-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #066af9), color-stop(100%, #0047ab));
+  background: -webkit-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  background: -o-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  background: -ms-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  background: linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+/* Gradient Background */
+.bg-grad, .skill.skill-grad .progress-bar, .nav-tabs.tab-grad .nav-link.active, .portfolio-style-2 .portfolio-card .portfolio-card-header:before, .portfolio-style-2 .portfolio-card:hover .portfolio-card-header:before, .team.team-overlay .team-item .team-avatar:before, .team.team-overlay .team-item:hover .team-avatar:before, .pricing .ribbon span, .portfolio .nav .nav-tabs-style-3 .nav-filter.active, .portfolio .nav .nav-tabs-style-2 .nav-filter.active, .portfolio .nav .nav-tabs-style-4 .nav-filter.active {
+    background: -moz-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #066af9), color-stop(100%, #0047ab));
+    background: -webkit-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -o-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -ms-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+}
+.btn-grad, .btn-outline-grad:before {
+    background: -moz-linear-gradient(150deg, #0047ab 0%, #066af9 50%, #0047ab 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0047ab), color-stop(50%, #066af9), color-stop(100%, #0047ab));
+    background: -webkit-linear-gradient(150deg, #0047ab 0%, #066af9 50%, #0047ab 100%);
+    background: -o-linear-gradient(150deg, #0047ab 0%, #066af9 50%, #0047ab 100%);
+    background: -ms-linear-gradient(150deg, #0047ab 0%, #066af9 50%, #0047ab 100%);
+    background: linear-gradient(150deg, #0047ab 0%, #066af9 50%, #0047ab 100%);
+    background-size: 260% 100%;
+    background-position: right bottom;
+}
+.icon-grad i:before {
+    background: -moz-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #066af9), color-stop(100%, #0047ab));
+    background: -webkit-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -o-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -ms-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.accordion-grad .accordion-title a, .blockquote.grad-line:after, .feature-box.f-style-1:before {
+    background: -moz-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #066af9), color-stop(100%, #0047ab));
+    background: -webkit-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -o-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -ms-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+}
+
+.divider-grad:before {
+  background: -moz-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #066af9), color-stop(100%, #0047ab));
+  background: -webkit-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  background: -o-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  background: -ms-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+  background: linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+}
+
+.divider-grad:after {
+  background: -moz-linear-gradient(150deg, #0047ab 0%, #066af9 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0047ab), color-stop(100%, #066af9));
+  background: -webkit-linear-gradient(150deg, #0047ab 0%, #066af9 100%);
+  background: -o-linear-gradient(150deg, #0047ab 0%, #066af9 100%);
+  background: -ms-linear-gradient(150deg, #0047ab 0%, #066af9 100%);
+  background: linear-gradient(150deg, #0047ab 0%, #066af9 100%);
+}
+
+@media only screen and (min-width:992px) {
+	.navbar-nav .dropdown-menu:before {
+		background: -moz-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #066af9), color-stop(100%, #0047ab));
+    background: -webkit-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -o-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: -ms-linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+    background: linear-gradient(150deg, #066af9 0%, #0047ab 100%);
+	}
+}
+
+/*SVG fill color*/
+.fill-grad-start { stop-color: #066af9; }
+.fill-grad-end { stop-color: #0047ab; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .icon-grad i::before{ background: none; color: #066af9 !important; }
+  .text-grad{  background: none; color: #066af9 !important; }
+}

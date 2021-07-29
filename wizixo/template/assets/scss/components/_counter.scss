@@ -1,0 +1,116 @@
+/*counter*/
+.counter {
+  position: relative;
+  .counter-item {
+    color: $white;
+  }
+    .counter-item-icon {
+      font-size: 70px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .counter-item-digit{
+      font-size: 50px;
+      color: $white;
+      font-weight: $font-weight-bold;
+      margin-bottom: 10px;
+    }
+    .counter-item-text {
+      font-size: $h5-font-size;
+      margin-bottom: 0;
+    }
+}
+
+/*counter medium*/
+.counter-medium {
+  .counter-item-icon {
+    margin-bottom: 0px;
+    font-size: 40px;
+  }
+  .counter-item-digit{
+    margin-bottom: 0px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .counter-item-text {
+    font-size: 16px;
+  }
+}
+
+/*counter small*/
+.counter-small {
+  .counter-item-icon {
+    margin-bottom: 0px;
+    font-size: $h2-font-size;
+  }
+  .counter-item-digit{
+    margin-bottom: 0px;
+    font-size: $h2-font-size;
+    line-height: 36px;
+    margin-top: 15px;
+  }
+  .counter-item-text {
+    font-size: $font-size-base;
+  }
+}
+
+/*counter light*/
+.counter-light {
+  .counter-item-icon, .counter-item-text {
+    color: $gray-600;
+  }
+  .counter-item-digit{
+    color: $gray-800;
+  }
+}
+
+/*counter gradient text*/
+.counter-grad-text {
+  .counter-item-icon, .counter-item-digit{
+    @include linear-gradient($grad-start, $grad-end, 150deg);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    text-fill-color: transparent;
+    opacity: 1;
+    z-index: 9999;
+  }
+}
+
+/*counter style-2*/
+.counter-style-2 {
+  position: relative;
+  .counter-item-icon, .counter-item-digit{
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+  .counter-item-text {
+    position: absolute;
+    left: 60px;
+    top: 30px;
+  }
+}
+
+@include media-breakpoint-down(sm){
+  .counter {
+    .counter-item {
+      margin-bottom: 30px;
+    }
+    padding-bottom: 0 !important;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .counter-grad-text .counter-item-icon, .counter-grad-text .counter-item-digit{
+    background: none !important;
+    color: $primary !important;
+  }
+}

@@ -1,0 +1,106 @@
+
+/* testimonials */
+.testimonials {
+  .testi-avatar img {
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .testi-full {
+    text-align: center;
+    .testi-avatar {
+      margin-bottom: 20px;
+    }
+  }
+  .testi-text {
+    padding: 0 100px;
+  }
+  .testi-big .testi-text p {
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+
+
+/*testimonials border*/
+.testimonials.testimonials-border {
+  .testi-avatar {
+    margin-top: 30px;
+  }
+  .testi-text {
+    padding: 0px;
+    p {
+      padding: 20px;
+      border: 3px solid $gray-200;
+      position: relative;
+      @include transition-animation (all, 0.5s, ease-in-out);
+      &:before {
+        content: "";
+        border-style: solid;
+        border-color: $gray-200 transparent transparent;
+        border-width: 17px 14px 0;
+        height: 0;
+        width: 0;
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        @include transition-animation (all, 0.5s, ease-in-out);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-style: solid;
+        border-color: $white transparent transparent;
+        border-width: 18px 15px 0;
+        height: 0;
+        width: 0;
+        bottom: -14px;
+        @include transition-animation (all, 0.5s, ease-in-out);
+      }
+    }
+  }
+}
+
+/*testimonials border hover*/
+.testimonials.testimonials-border .testimonials-wrap:hover .testi-text p {
+  border: 3px solid $primary;
+  @include transition-animation (all, 0.5s, ease-in-out);
+  &:before {
+    border-color: $primary transparent transparent;
+    @include transition-animation (all, 0.5s, ease-in-out);
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+	.testimonials .testi-text {
+		padding: 0px;
+	}
+
+}
+
+@include media-breakpoint-down(md) {
+	.testimonials .testi-text {
+		padding: 0 50px;
+	}
+
+}
+
+@include media-breakpoint-down(sm) {
+	.testimonials .testi-text {
+		padding: 0 20px;
+	}
+
+}
+
+@include media-breakpoint-down(xs) {
+	.testimonials .testi-text {
+		padding: 0px;
+	}
+
+}

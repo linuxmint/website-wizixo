@@ -1,0 +1,83 @@
+/*divider*/ 
+.divider {
+  color: $gray-600;
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  text-align: center;
+  line-height: 0em;
+  i {
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span, a {
+    margin: 0 20px 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &:before {
+    border-bottom: $hr-border-width solid $hr-border-color;
+    content: "";
+    display: inline-block;
+    height: 0em;
+    margin: 0 0 0 -100%;
+    vertical-align: middle;
+    width: 50%;
+  }
+  &:after {
+    border-bottom: $hr-border-width solid $hr-border-color;
+    content: "";
+    display: inline-block;
+    height: 0;
+    margin: 0 0 0 -100%;
+    vertical-align: middle;
+    width: 50%;
+    margin: 0 -100% 0 0;
+  }
+}
+
+.divider-grad {
+  &:before {
+    height: 3px;
+    @include linear-gradient($grad-start, $grad-end, 150deg);
+  }
+  &:after {
+    height: 3px;
+    @include linear-gradient($grad-end, $grad-start, 150deg);
+  }
+}
+
+.divider-dark {
+  &:before, &:after {
+    border-bottom: $border-width solid $border-color !important;
+  }
+}
+
+.divider-dotted {
+  &:before, &:after {
+    border-bottom: 3px dotted $border-color;
+  }
+}
+
+.divider-bold {
+  &:before, &:after {
+    border-bottom-width: 5px;
+  }
+}
+
+.divider-small {
+  width: 10%;
+  margin: 5px auto;
+}
+
+.divider-medium {
+  width: 20%;
+  margin: 10px auto;
+}
+
+.divider-large {
+  width: 60%;
+  margin: 10px auto;
+}

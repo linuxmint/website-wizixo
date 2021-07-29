@@ -1,0 +1,17 @@
+{
+  "name": "wizixo",
+  "version": "1.2.0",
+  "author": "webestica",
+  "private": true,
+  "description": "creative multi-purpose template",
+  "main": "index.html",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

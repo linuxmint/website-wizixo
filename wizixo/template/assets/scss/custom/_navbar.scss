@@ -1,0 +1,141 @@
+//
+// Bootstrap navbar nav overrides
+//
+
+.navbar-nav {
+  .nav-link {
+    font-size: $navbar-nav-link-font-size;
+    font-weight: $navbar-nav-link-font-weight;
+    text-transform: $navbar-nav-link-text-transform;
+    line-height: $nav-link-line-height;
+    padding-top: 0; 
+    padding-bottom: 0; 
+  }
+  .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+}
+
+/* navbar toggler*/
+.navbar-toggler{ 
+  margin-bottom: 0; 
+  border: 0;
+}
+
+/* Header brand */
+.navbar-brand {
+  padding-top: $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
+  .navbar-brand-item {
+    height: $navbar-brand-height;
+    display: block;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+// links against a primary background
+.navbar-primary {
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-primary-color;
+
+      @include hover-focus {
+        color: $navbar-primary-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-primary-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-primary-active-color;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-primary-color;
+    a {
+      color: $navbar-primary-active-color;
+
+      @include hover-focus {
+        color: $navbar-primary-active-color;
+      }
+    }
+  }
+}
+
+.navbar-primary .navbar-toggler-icon {
+    background-image: $navbar-primary-toggler-icon-bg;
+}
+
+@include media-breakpoint-down(lg){
+.megamenu {
+  width: 100%;
+  .dropdown-menu {
+    width: 100%;
+    background-image: none !important;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+}
+
+@include media-breakpoint-down(md){
+.navbar-collapse {
+  overflow-y: scroll;
+  max-height: 350px;
+  box-shadow: 0px 10px 30px rgba(83, 88, 93, .2);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: $white;
+  border-top: 1px solid $border-color;
+}
+
+.navbar-nav .nav-link{
+  line-height: 44px;
+}
+
+.navbar-nav .dropdown-menu {
+  box-shadow: none;
+  padding-top: 0;
+  &:before {
+    content: none;
+  }
+}
+.navbar-nav .nav-item{ 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 30px; 
+  position: relative;
+}
+
+.navbar-nav .dropdown-toggle::after {
+  position: absolute;
+  right: 30px;
+}
+
+.navbar-nav .nav-item.dropdown.show > .dropdown-toggle::after{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.navbar-nav .dropdown-submenu .dropdown-menu{
+  padding-left: 20px;  
+  padding-bottom: 0px;
+}
+
+}
+
+

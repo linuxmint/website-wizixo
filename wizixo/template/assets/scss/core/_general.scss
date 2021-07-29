@@ -1,0 +1,501 @@
+/*----------------------------------------------------------------------
+  * Wizixo - Multipurpose Corporate theme
+  * General Styles
+------------------------------------------------------------------------*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  @include transition-animation;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  background-size: cover;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+ul, ol, dl {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin-bottom:20px;
+}
+
+*:focus {
+    outline: none !important;
+}
+.custom-select{
+  -webkit-appearance: none;
+}
+
+/*Highlight Color*/
+::selection{
+  color: $white;
+  background: $primary;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $primary;
+}
+
+.bg-primary::selection, .bg-grad::selection {
+  color: $primary;
+  background: $white;
+}
+
+.bg-primary, .bg-grad::-moz-selection {
+  color: $primary;
+  background: $white;
+}
+
+/*font family*/
+.body-font {
+  font-family: $font-family-base !important;
+}
+.title-font {
+  font-family: $font-family-heading !important;
+}
+.alt-font {
+  font-family: $font-family-alt !important; 
+}
+
+.lead {
+  line-height: 30px;
+}
+
+/*===============================
+            TITLE 
+=================================*/
+.title {
+  padding: 0 0 30px;
+  h2 {
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 10px;
+  }
+  .pre-title {
+    font-family: $font-family-alt;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+    display: block;
+  }
+  &.text-center p {
+    padding: 0 80px;
+  }
+  &.title-light * {
+    color: $white;
+    opacity: 0.9;
+  }
+}
+
+/*BACK TOP TOP*/
+
+.back-top {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 13px 14px !important;
+  position: fixed !important;
+  bottom: 25px;
+  right: 25px;
+  border-radius: $border-radius;
+  display: block;
+  text-align: center;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50%);
+  @include transition-animation;
+  i {
+    font-size: 12px;
+    color: $white;
+    margin: 0 !important;
+    display: block;
+  }
+  &.btn-show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/*PRE LOADER*/
+
+.preloader {
+  background-color: $white;
+  position: fixed;
+  z-index: 999999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*Animation delay*/
+.dealy-200 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+
+.dealy-500 {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.dealy-700 {
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+.dealy-1000 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.dealy-1500 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.dealy-2000 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.dealy-2500 {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.dealy-3000 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+/*===============================
+      INNERPAGE BANNER
+=================================*/
+.innerpage-banner {
+  position: relative;
+  h1 {
+    font-size: $h1-font-size;
+    font-weight: $font-weight-bold;
+  }
+  h6 {
+    margin-bottom: 0;
+  }
+  .breadcrumb {
+    position: absolute;
+  }
+}
+
+.innerpage-banner.center {
+  text-align: center;
+  h6 {
+    margin-bottom: 50px;
+  }
+  .breadcrumb {
+    left: 0px;
+    top: 100%;
+    right: 0;
+    display: block;
+  }
+}
+
+.innerpage-banner.right {
+  text-align: right;
+  .breadcrumb {
+    left: 15px;
+    top: 50%;
+    width: auto;
+    margin-top: -10px;
+  }
+}
+
+.innerpage-banner.left {
+  text-align: left;
+  .breadcrumb {
+    right: 15px;
+    top: 50%;
+    width: auto;
+    margin-top: -10px;
+  }
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  .breadcrumb-item {
+    display: inline-block;
+    a {
+      i {
+        font-size: 12px;
+        @include transition-animation;
+      }
+      &:hover i {
+        color: $primary;
+        @include transition-animation;
+      }
+    }
+  }
+  > .breadcrumb-item + .breadcrumb-item:before {
+    content: "\f111" !important;
+    padding: 0 12px 0 0px !important;
+    font-family: 'FontAwesome';
+    font-size: 7px;
+    vertical-align: middle;
+    color: $white !important;
+    float: none;
+  }
+}
+
+/*===============================
+      CONTACT PAGE
+=================================*/
+
+/*Google map*/
+.contact-map {
+  .map-wrapper {
+    height: 448px;
+    width: 100%;
+  }
+  iframe {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.contact-box {
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  .contact-box-icon {
+    font-size: 24px;
+  }
+}
+
+/*===============================
+      TIMELINE 
+=================================*/
+.timeline-dot {
+  height: 30px;
+  width: 30px;
+  display: block;
+  border: solid 2px #efefef;
+  background: $white;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.timeline-line:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #efefef;
+  height: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.timeline-top:before {
+  background: #efefef;
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  display: block;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+}
+
+/*Error page*/
+.error-page {
+  padding: 10rem 0;
+  h2 {
+    font-size: 200px;
+    line-height: 150px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 50px;
+    display: block;
+    line-height: 50px;
+  }
+}
+
+.logo-auth{
+  height: $navbar-brand-height;
+  display: block;
+  max-width: 100%;
+  width: auto;
+}
+
+/*===============================
+      IE 10+ specific styles
+=================================*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  
+  .ie-height-900 {
+    height: 900px !important;
+  }
+
+  .ie-height-800 {
+    height: 800px !important;
+  }
+
+  .ie-height-700 {
+    height: 700px !important;
+  }
+
+  .ie-height-750 {
+    height: 750px !important;
+  }
+
+  .ie-height-600 {
+    height: 600px !important;
+  }
+
+  .ie-banner-2 {
+    height: 628px !important;
+  }
+
+  .ie-d-none {
+    display: none !important;
+  }
+
+  .icon-grad i::before, .text-grad {
+    background: none !important;
+    color: $primary !important;
+  }
+
+  .wave + .wave{
+    height: 100px !important;
+    background-color: $white;
+  }
+
+}
+
+@include media-breakpoint-down(lg){
+  .container {
+    width: 94%;
+  }
+}
+@include media-breakpoint-down(md) {
+  .innerpage-banner {
+    &.left .breadcrumb {
+      top: 100%;
+      margin: 0;
+      left: 15px;
+    }
+    &.right .breadcrumb {
+      top: 100%;
+      margin: 0;
+      right: 15px;
+      left: auto;
+    }
+  }
+
+  .error-page {
+    padding: 8rem 0;
+  }
+
+  .wave {
+    height: 150px;
+    + .wave {
+      height: 150px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .error-page {
+    padding: 6rem 0;
+  }
+
+  .maintenance-page h1 {
+    font-size: 3rem;
+  }
+
+  .title {
+    h2 {
+      font-size: 30px;
+      line-height: 42px;
+    }
+    .pre-title {
+      font-size: 20px;
+    }
+    p {
+      padding: 0px !important;
+    }
+  }
+
+}
+
+@include media-breakpoint-down(xs){
+  .container {
+    width: 100% !important;
+    padding: 0 15px;
+  }
+
+  .innerpage-banner h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .error-page {
+    padding: 5rem 0;
+    h2 {
+      font-size: 100px;
+      line-height: 80px;
+    }
+    h3 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}
+

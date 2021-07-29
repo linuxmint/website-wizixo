@@ -1,0 +1,33 @@
+
+// Background gradient
+@mixin linear-gradient($color-one,$color-two,$degrees) {
+  background: -moz-linear-gradient($degrees, $color-one 0%, $color-two 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color-one), color-stop(100%, $color-two)); 
+  background: -webkit-linear-gradient($degrees, $color-one 0%, $color-two 100%);
+  background: -o-linear-gradient($degrees, $color-one 0%, $color-two 100%); 
+  background: -ms-linear-gradient($degrees, $color-one 0%, $color-two 100%);
+  background: linear-gradient($degrees, $color-one 0%, $color-two 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 ); 
+}
+
+// Button gradient
+@mixin linear-gradient-btn($color-one,$color-two,$color-three,$degrees) {
+  background: -moz-linear-gradient($degrees, $color-one 0%, $color-two 50%, $color-three 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color-one), color-stop(50%, $color-two),color-stop(100%, $color-three)); 
+  background: -webkit-linear-gradient($degrees, $color-one 0%, $color-two 50%, $color-three 100%); 
+  background: -o-linear-gradient($degrees, $color-one 0%, $color-two 50%, $color-three 100%); 
+  background: -ms-linear-gradient($degrees, $color-one 0%, $color-two 50%, $color-three 100%); 
+  background: linear-gradient($degrees, $color-one 0%, $color-two 50%, $color-three 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 ); 
+}
+
+// transition
+@mixin transition-animation($what: all, $time: 0.3s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition:    $what $time $how;
+  -ms-transition:     $what $time $how;
+  -o-transition:      $what $time $how;
+  transition:         $what $time $how;
+}
+
+

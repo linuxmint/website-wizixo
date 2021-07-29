@@ -1,0 +1,128 @@
+//
+// Bootstrap dropdown overrides
+//
+
+.dropdown-menu{
+  box-shadow: $dropdown-box-shadow;
+}
+
+.dropdown-item{
+  font-weight: $dropdown-item-font-weight;
+  text-transform: capitalize;
+  position: relative;
+}
+.dropdown-item.active{
+  color: $primary !important;
+}
+
+// Dropdown arrows
+// Replace original arrows with Custom icons
+// 
+.dropdown-toggle{
+  &:after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-size: 0.6rem;
+    margin-left: 0.35rem;
+    font-weight: 900;
+    vertical-align: middle;
+    border: none;
+  }
+}
+
+// 
+// Navbar top flag
+// 
+.dropdown-item-icon {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: $font-size-base;
+  min-width: 1rem;
+  max-width: 1rem;
+  margin-right: .3rem;
+}
+
+.dropdown-header {
+  font-weight: $dropdown-header-font-weight;
+  padding-top: $dropdown-padding-y - .5rem;
+  font-size: $dropdown-header-font-size;
+}
+
+
+// 
+// Dropdown overrides for navbar only
+// 
+.dropdown-menu .dropdown-toggle{
+  &:after {
+    position: absolute;
+    right: 25px;
+    top: 10px
+  }
+}
+.megamenu {
+  position: static;
+  .dropdown-menu{
+    width: 1170px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 0;
+  }
+}
+
+
+@include media-breakpoint-up(lg){
+// 
+// Dropdown menu open on hover for navbar
+// 
+  .navbar-nav .dropdown-menu{
+    top: 120%;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    @include transition-animation (all, 0.3s, ease-in-out);
+  }
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+    
+  }
+  .navbar-nav .dropdown-submenu:hover > .dropdown-menu {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+
+// 
+// navbar dropdown menu top border
+// 
+  .navbar-nav .dropdown-menu:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 3px;
+    opacity: 1;
+    @include linear-gradient($grad-start, $grad-end, 150deg);
+  }
+  .dropdown-submenu {
+    position: relative;
+    .dropdown-menu{
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin-top: - $dropdown-padding-y;
+    }
+  }
+}
+
+
+
+
+
+
+

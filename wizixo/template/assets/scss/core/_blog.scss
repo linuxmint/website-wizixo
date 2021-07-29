@@ -1,0 +1,593 @@
+/*===============================
+			    BLOG POST
+=================================*/
+.post {
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  border: 1px solid $border-color;
+  background: $white;
+  .post-info {
+    padding: 1rem;
+    a {
+      color: $gray-600;
+      font-size: $font-size-base;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.post .post-tag {
+  padding: 1px 10px;
+  font-size: 12px;
+  border-radius: $border-radius;
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  a {
+    color: $white;
+    font-size: $font-size-xs;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+
+.post {
+  .post-author, .post-time {
+    display: inline-block;
+  }
+  .post-title {
+    font-size: 18px !important;
+    line-height: 26px;
+    display: block;
+    margin: 15px 0;
+    color: $gray-800;
+  }
+}
+
+/*Post style 1*/
+.post-style-1 .post {
+  padding: 0;
+  border: none;
+  border-radius: $border-radius;
+  .post-info {
+    position: absolute;
+    bottom: -50px;
+    @include transition-animation;
+  }
+}
+
+.post-style-1 .post-info {
+  a, h4 {
+    color: $white;
+  }
+  p {
+    color: $white;
+    opacity: 0;
+    @include transition-animation;
+  }
+}
+.post-style-1 .post-tag {
+  top: 20px;
+}
+
+.post-style-1 .post {
+  &:hover .post-info {
+    bottom: 0px;
+    p {
+      opacity: 1;
+    }
+  }
+  &:before {
+    content: "";
+    background: -moz-linear-gradient(0deg, $secondary 0%, transparent 50%);
+    background: -webkit-linear-gradient(0deg, $secondary 0%, transparent 50%);
+    background: -o-linear-gradient(0deg, $secondary 0%, transparent 50%);
+    background: -ms-linear-gradient(0deg, $secondary 0%, transparent 50%);
+    background: linear-gradient(0deg, $secondary 0%, transparent 50%);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/*Post style 2*/
+.post-style-2 .post {
+  padding: 0;
+  border: none;
+  background: transparent;
+  img {
+    border-radius: $border-radius;
+  }
+  .post-info {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*Post style 3*/
+.post-style-3 .post {
+  padding: 15px;
+  border: none;
+  background: $white;
+  border-radius: $border-radius;
+  .post-info {
+    .post-title {
+      font-size: $h4-font-size;
+    }
+    p {
+      font-size: $h6-font-size;
+    }
+    .post-tag {
+      top: 30px;
+      right: 30px;
+    }
+  }
+}
+
+/*===============================
+			 BLOG PAGE
+=================================*/
+.post-item {
+  position: relative;
+  &.post-bb {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 60px;
+  }
+  .post-item-desc {
+    padding: 20px 0 50px 0;
+  }
+  .post-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    a {
+      display: block;
+    }
+  }
+}
+
+.post-item .post-meta-category {
+  padding: 2px 7px;
+  color: $white;
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: 9;
+  font-size: $font-size-xs;
+  a {
+    color: $white;
+  }
+}
+
+.post-item .post-item-desc .post-meta {
+  margin-right: 10px;
+  a {
+    color: $gray-600;
+    &:hover {
+      color: $primary;
+    }
+  }
+  i {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+.post-item .post-item-desc h4 {
+  margin: 16px 0;
+  a {
+    display: block;
+    color: $gray-800;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.post-item .item-link {
+  color: $gray-600;
+  &:hover {
+    color: $primary;
+    i {
+      color: $primary;
+      margin-left: 10px;
+    }
+  }
+  i {
+    margin-left: 5px;
+    vertical-align: middle;
+    @include transition-animation;
+  }
+}
+
+.post-item .post-quote {
+  position: relative;
+  padding-left: 70px;
+  > blockquote {
+    margin-bottom: 0;
+    &:before {
+      content: '“';
+      font-family: "arial";
+      display: inline-block;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      line-height: 0.9em;
+      font-weight: $font-weight-bold;
+      color: $primary;
+      font-size: 120px;
+    }
+  }
+}
+
+.post-item .soundcloud {
+  width: 100%;
+  border: 1px solid $white;
+  height: 166px;
+}
+
+/*blog grid*/
+.blog-grid {
+  .post-item {
+    float: left;
+    padding: 0 15px 0px 15px;
+  }
+  padding: 0px 0px 8px;
+  overflow: hidden;
+}
+
+.blog-grid-2 .post-item {
+  width: 50%;
+}
+
+.blog-grid-3 .post-item {
+  width: 33.3333%;
+}
+
+.blog-grid-4 .post-item {
+  width: 25%;
+  .post-item-desc h4 {
+    font-size: 20px;
+  }
+}
+
+.page-link {
+  color: $gray-800;
+  padding: .75rem 1rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.page-item.active .page-link {
+  background-color: $primary;
+  border-color: transparent;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+/*Sidebar*/
+.sidebar .widget {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  .widget-title {
+    margin-bottom: 15px;
+  }
+  a {
+    color: $gray-600;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.tags a {
+  border: 1px solid $border-color;
+  font-size: $font-size-xs;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-radius: $border-radius;
+  color: $gray-600;
+  &:hover {
+    border: 1px solid $primary;
+    color: $primary;
+  }
+}
+
+/*widget post*/
+.sidebar .widget .widget-post {
+  margin: 0;
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid $border-color;
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .widget-image {
+    width: 60px;
+    height: auto;
+    display: table-cell;
+  }
+}
+
+.sidebar .widget .widget-post .details {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 15px;
+  a {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    display: block;
+    margin-bottom: 0px;
+    color: $gray-800;
+    font-weight: $font-weight-bold;
+    &:hover {
+      color: $primary;
+    }
+  }
+  .date {
+    font-size: $font-size-base;
+    margin-bottom: 0;
+  }
+}
+
+/*widget newsletter*/
+.sidebar .widget.widget-newsletter {
+  button {
+    margin-left: -1px;
+    border-radius: 0px $border-radius $border-radius 0;
+  }
+  .btn {
+    text-transform: none;
+    font-weight: $font-weight-bold;
+  }
+}
+
+/*blog single page*/
+.comment {
+  border-bottom: 1px solid $border-color;
+  padding: 30px 0 0;
+}
+
+.comment-child > .comment {
+  border: 0;
+  border-top: 1px solid $border-color;
+  margin-left: 85px;
+}
+
+.comment > .comment-child > .comment-child .comment {
+  margin-left: 165px;
+}
+
+.comment-list > .comment:last-child {
+  border: 0;
+}
+
+.comment-author {
+  margin: 5px 0 0;
+  height: 64px;
+  width: 64px;
+  float: left;
+  > img {
+    border-radius: 100%;
+  }
+}
+
+.author-img > img {
+  border-radius: 100%;
+}
+
+.comment-body {
+  position: relative;
+  padding: 0 0 10px;
+  margin: 0 0 0 85px;
+}
+
+.comment-meta {
+  margin: 0 0 15px;
+}
+
+.comment-meta-author a {
+  font-weight: $font-weight-normal;
+  color: $gray-800;
+}
+
+.comment-meta-date {
+  font-size: 90%;
+}
+
+.comment-reply {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.author-info {
+  padding: 30px;
+  border-radius: $border-radius;
+}
+
+.author-img {
+  margin: 5px 0 0;
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.author-info-body {
+  position: relative;
+  margin: 0 0 0 130px;
+}
+
+.post-navigation {
+  .post-next:before, .post-prev:before {
+    font-family: fontawesome;
+    color: $gray-800;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    padding-top: 2px;
+    transform: translate3d(0, -50%, 0);
+    @include transition-animation;
+  }
+  .post-next:before {
+    right: 15px;
+    content: "\f105";
+  }
+  .post-prev:before {
+    left: 15px;
+    content: "\f104";
+  }
+  .post-next:hover:before {
+    right: 10px;
+    content: "\f105";
+    color: $primary;
+  }
+  .post-prev:hover:before {
+    left: 10px;
+    content: "\f104";
+    color: $primary;
+  }
+}
+
+.post-navigation {
+  .post-next:hover {
+    h6, p {
+      color: $primary;
+    }
+  }
+  .post-prev:hover {
+    h6, p {
+      color: $primary;
+    }
+  }
+  h6 {
+    margin-bottom: 0;
+    @include transition-animation;
+  }
+}
+
+.post-navigation {
+  .post-prev p {
+    display: block;
+    color: $gray-600;
+    font-size: $font-size-xs;
+  }
+  .post-next {
+    p {
+      display: block;
+      color: $gray-600;
+    }
+    text-align: right;
+    padding-right: 20px;
+    display: block;
+  }
+  .post-prev {
+    text-align: left;
+    padding-left: 20px;
+    display: block;
+  }
+  .all-post {
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    color: $gray-800;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+  .blog-grid-4 .post-item { width: 33.333333%; }
+}
+
+@include media-breakpoint-down(md) {
+   .post-navigation {
+    .post-next:before, .post-prev:before {
+      top: 40%;
+    }
+    .all-post {
+      padding-top: 0;
+    }
+  }
+  .comment-reply {
+    position: relative;
+    top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .comment-child > .comment {
+    margin-left: 70px;
+  }
+
+  .comment > .comment-child > .comment-child .comment {
+    margin-left: 100px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .post-item {
+  .post-meta-category {
+    padding: 4px 8px;
+    top: 5%;
+    }
+    .post-item-desc {
+      padding-bottom: 40px;
+      }
+    &.post-bb {
+      margin-bottom: 40px;
+      }
+    }
+  .blog-grid-3 .post-item, .blog-grid-4 .post-item {
+  width: 50%;
+  }
+}
+@include media-breakpoint-down(xs) {
+  .blog-grid-2 .post-item, .blog-grid-3 .post-item, .blog-grid-4 .post-item {
+  width: 100%;
+  }
+  .author-img {
+  float: none;
+  margin-bottom: 20px;
+  }
+
+  .author-info-body {
+    margin: 0px;
+  }
+
+  .comment-body {
+    margin: 0;
+    clear: both;
+  }
+
+  .comment-child > .comment {
+    margin-left: 25px;
+  }
+
+  .comment > .comment-child > .comment-child .comment {
+    margin-left: 50px;
+  }
+}
+
