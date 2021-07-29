@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512px"
+   height="164px"
+   viewBox="0 0 512 168"
+   version="1.1"
+   preserveAspectRatio="xMidYMid"
+   id="svg16"
+   sodipodi:docname="brought-to-you-by.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:export-filename="/home/clem/Sandbox/artwork/website-wizixo/wizixo/template/img/sponsors/01.png"
+   inkscape:export-xdpi="46.243904"
+   inkscape:export-ydpi="46.243904">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1355"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="0.72460938"
+     inkscape:cx="-331.90296"
+     inkscape:cy="-28.404313"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g30" />
+  <g
+     transform="matrix(0.99145989,0,0,0.99145989,-0.0975597,36.480346)"
+     id="g30"
+     style="fill:#a8adb1;fill-opacity:1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.32855988px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.03321397px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="75.735062"
+       y="60.079571"
+       id="text828"><tspan
+         sodipodi:role="line"
+         id="tspan826"
+         x="75.735062"
+         y="60.079571"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.32855988px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#a8adb1;fill-opacity:1;stroke-width:1.03321397px">Brought to you by:</tspan></text>
+  </g>
+</svg>
