@@ -1,9 +1,14 @@
 @media (max-width: 1440px) {
-  .nav-item:nth-last-of-type(1) > .dropdown-menu {
-    left: -65vh;
+  .nav-item:nth-last-of-type(1) {
+    position: unset;
   }
 
-  .nav-item:nth-last-of-type(2) > .dropdown-menu {
-    left: -40vh;
+  .navbar-nav {
+    position: relative;
+  }
+
+  .nav-item:nth-last-of-type(-n + 2) > .dropdown-menu {
+    right: 0px;
+    left: unset;
   }
 }
