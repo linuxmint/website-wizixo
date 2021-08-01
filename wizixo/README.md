@@ -7,7 +7,7 @@ documentation/
   ├──  index.html 
 template/
   ├──  assets
-  │   ├──  CSS/
+  │   ├──  css/
   │   ├──  images/
   │   ├──  include/
   │   ├──  js/
