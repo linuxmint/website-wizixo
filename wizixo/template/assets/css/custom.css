@@ -1,0 +1,9 @@
+@media (max-width: 1440px) {
+  .nav-item:nth-last-of-type(-n + 1) > .dropdown-menu {
+    left: -65vh;
+  }
+
+  .nav-item:nth-last-of-type(2) > .dropdown-menu {
+    left: -40vh;
+  }
+}
