@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   class="navbar-brand-item"
+   preserveAspectRatio="xMinYMid"
+   width="455"
+   height="100"
+   viewBox="0 0 454.99999 100"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="logo2-name.svg"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#cccccc"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1415"
+     id="namedview12"
+     showgrid="false"
+     inkscape:pagecheckerboard="false"
+     inkscape:zoom="2.4043956"
+     inkscape:cx="227.29205"
+     inkscape:cy="50.116545"
+     inkscape:window-x="2560"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10"
+     showguides="false">
+    <sodipodi:guide
+       position="1.7770108e-06,17.969015"
+       orientation="0,455"
+       id="guide1215" />
+  </sodipodi:namedview>
+  <g
+     id="g1959"
+     transform="matrix(5.757733,0,0,5.757733,132.87655,-822.25677)">
+    <text
+       id="text2004"
+       y="156.81107"
+       x="-4.0155602"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.9032px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.130342px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.9032px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.130342px"
+         y="156.81107"
+         x="-4.0155602"
+         id="tspan2002"
+         sodipodi:role="line">linuxmint</tspan></text>
+  </g>
+  <g
+     id="g2554"
+     transform="matrix(0.390625,0,0,0.390625,-31.25,-34.37496)">
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round"
+       id="circle916"
+       cx="208"
+       cy="216"
+       r="128" />
+    <path
+       id="path833"
+       style="opacity:1;fill:#4cbd89;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round"
+       d="M 127.67578,0 A 128,128 0 0 0 63,17.732422 V 158 c 0,14.51339 11.48661,26 26,26 h 78 c 14.51339,0 26,-11.48661 26,-26 V 93 c 0,-7.33368 -5.66632,-13 -13,-13 -7.33368,0 -13,5.66632 -13,13 v 65 H 141 V 93 c 0,-7.33368 -5.66632,-13 -13,-13 -7.33368,0 -13,5.66632 -13,13 v 65 H 89 V 93 c 0,-21.38512 17.61488,-39 39,-39 9.99043,0 19.06681,3.949393 26,10.226562 C 160.93319,57.949393 170.00957,54 180,54 c 21.38512,0 39,17.61488 39,39 v 65 c 0,28.56483 -23.43517,52 -52,52 H 89 C 60.43517,210 37,186.56483 37,158 V 37.982422 A 128,128 0 0 0 0,128 128,128 0 0 0 128,256 128,128 0 0 0 256,128 128,128 0 0 0 128,0 128,128 0 0 0 127.67578,0 Z"
+       transform="translate(80,88)" />
+  </g>
+</svg>
