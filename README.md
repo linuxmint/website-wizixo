@@ -28,6 +28,23 @@ Cons:
 - `wizixo/documentation` contains the theme documentation.
 - `wizixo/template` contains the root of the mint website. This is where we work.
 - `wizixo/*` contains the gulp file to regenerate the assets.
+- `wizixo/template/mint-section-*.html` contain HTML/CSS sections which are used in multiple pages.
+- `wizixo/template/mint-page-*.html` are the source for Mint pages. They can contain `<include>` tags to include common sections which are replaced using `build.py`.
+- `wizixo/build.py` is a script which builds the Mint pages.
+
+## Build
+
+To avoid duplicating the same headers and footers in every single page, we put common sections in `mint-section-*.html` files.
+
+We then work on pages called `mint-page-*.html` which include these sections with `<include>` tags.
+
+Let's take an example:
+
+- `mint-page-privacy.html` is the page we work on, it's in our git tree.
+- It contains two tags to include the header and for the footer: `<include src="mint-section-header.html"/>` and `<include src="mint-section-footer.html"/>`
+- When we run `build.py`, it generates `mint-privacy.html` using the content of `mint-page-privacy.html` and it replaces the `include` tags with the content of the header and footer sections.
+
+The resulting `mint-privacy.html` page is what we can open with our Web browser.
 
 ## Web pages
 
