@@ -41,8 +41,10 @@ We then work on pages called `mint-page-*.html` which include these sections wit
 Let's take an example:
 
 - `mint-page-privacy.html` is the page we work on, it's in our git tree.
-- It contains two tags to include the header and for the footer: `<include src="mint-section-header.html"/>` and `<include src="mint-section-footer.html"/>`
+- It contains three tags to include the header, title and the footer: `<include src="mint-section-header.html"/>`, `<include src="mint-section-title.html" title="Privacy"/>` and `<include src="mint-section-footer.html"/>`
 - When we run `build.py`, it generates `mint-privacy.html` using the content of `mint-page-privacy.html` and it replaces the `include` tags with the content of the header and footer sections.
+
+Note that with the exception of `src`, attributes are also used. In the example above, `title="Privacy` is used to replace `$title` with `Privacy` when injecting the content of `mint-section-title.html`.
 
 The resulting `mint-privacy.html` page is what we can open with our Web browser.
 
@@ -68,6 +70,11 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
             <td>Footer</td>
             <td>mint-section-footer.html</td>
             <td>Footer section.</td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td>mint-section-title.html</td>
+            <td>Title section, used at the top of the page in all pages, except the main page.</td>
         </tr>
         <tr>
             <td>Home</td>

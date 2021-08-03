@@ -12,12 +12,23 @@ for page in os.listdir("."):
                 for line in source:
                     line=line.rstrip()
                     if "<include" in line:
-                        srcs = re.findall(r'<include[^<>]+src=["\']([^"\'<>]+\.(?:html|png|jpe?g))["\']', line, re.I)
-                        for src in srcs:
-                            if os.path.exists(src):
-                                print("  --> Adding content from %s" % src)
-                                with open(src) as content:
-                                    for content_line in content:
-                                        print(content_line.rstrip(), file=destination)
+                        attributes = re.findall(r'(\S+)=["\']?((?:.(?!["\']?\s+(?:\S+)=|[>"\']))+.)["\']?', line, re.I)
+                        variables = {}
+                        src = None
+                        for attribute in attributes:
+                            name, value = attribute
+                            if name == "src":
+                                src = value
+                            else:
+                                variables[name] = value
+                        if src != None and os.path.exists(src):
+                            print("  --> Adding content from %s" % src)
+                            with open(src) as content:
+                                for content_line in content:
+                                    content_line = content_line.rstrip()
+                                    for name in variables.keys():
+                                        value = variables[name]
+                                        content_line = content_line.replace("$%s" % name, value)
+                                    print(content_line, file=destination)
                     else:
                         print(line, file=destination)
