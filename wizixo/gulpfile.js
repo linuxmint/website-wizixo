@@ -24,7 +24,10 @@ gulp.task('sass', function() {
 // Static Server
 gulp.task('serve', function(done) {
     browserSync.init({
-        server: Paths.TEMPLATE
+        server: {
+            baseDir: Paths.TEMPLATE,
+            index: "mint-main.html"
+        },
     });
     done();
 });
