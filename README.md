@@ -1,5 +1,17 @@
 # Main Website
 
+<p align="center">
+  <img src="./wizixo/template/img/logo.svg" height="100" style="border-radius: 6px" />
+</p>
+
+<p align="center">
+<img alt="Slack" src="	https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
+<img alt="Html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img alt="Css3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img alt="Javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
+
+<hr>
 
 The goal of this project is to redesign the main Linux Mint website.
 
@@ -9,7 +21,6 @@ The goal of this project is to redesign the main Linux Mint website.
 - We only work with static content (HTML/CSS, no server backend).
 
 ## Themes
-
 
 In this project we modify a theme called Wizixo.
 
@@ -32,7 +43,46 @@ Cons:
 - `wizixo/template/mint-page-*.html` are the source for Mint pages. They can contain `<include>` tags to include common sections which are replaced using `build.py`.
 - `wizixo/build.py` is a script which builds the Mint pages.
 
-## Build
+## Install and running
+
+Clone the project:
+
+```bash
+git clone https://github.com/linuxmint/website-wizixo.git
+```
+
+Navigate to project folder:
+
+```bash
+cd website-wizixo/wizixo
+```
+
+Navigate to the `wizixo` folder and install the dependencies:
+
+```bash
+npm install
+#or
+yarn
+```
+
+Now, build the pages:
+
+```bash
+yarn build
+# or you can run the build.py file on root folder
+```
+
+Run the local server:
+
+```bash
+npm start
+#or
+yarn start
+```
+
+(ou can use others local http servers like: live server or python http.server)
+
+## Building pages
 
 To avoid duplicating the same headers and footers in every single page, we put common sections in `mint-section-*.html` files.
 
@@ -183,3 +233,9 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
         </tr>
     </tbody>
 </table>
+
+<div align="center">
+
+ <img src="./wizixo/template/img/favicon.ico" height="50" style="border-radius: 6px" />
+
+</div>
