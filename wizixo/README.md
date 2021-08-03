@@ -7,7 +7,7 @@ documentation/
   ├──  index.html 
 template/
   ├──  assets
-  │   ├──  CSS/
+  │   ├──  css/
   │   ├──  images/
   │   ├──  include/
   │   ├──  js/
@@ -15,8 +15,9 @@ template/
   │   └──  vendor/
   └── All template HTML files
 gulpfile.js
-package.JSON
-README.MD
+package.json
+README.md
+.gitignore
 ```
 
 #### Templates and Assets
@@ -31,7 +32,7 @@ To install Node visit [https://nodejs.org/download](https://nodejs.org/download/
 
 To install gulp, run the following command:
 
-```
+```bash
 $ npm install gulp -g
 ```
 
