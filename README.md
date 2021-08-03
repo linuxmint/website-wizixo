@@ -1,9 +1,9 @@
 # Main Website
 
 
-The goal of this project is to redesign the main Linux Mint website.
+The goal of this project is to redesign the _main_ _Linux Mint website._
 
-## Scope
+## Scope :
 
 - We only care about the landing page for now.
 - We only work with static content (HTML/CSS, no server backend).
@@ -13,20 +13,20 @@ The goal of this project is to redesign the main Linux Mint website.
 
 In this project we modify a theme called Wizixo.
 
-Pros:
+**Pros:**
 
 - Great block separators, easy to use
 - Gradients and geometrical shapes
 - Perfect color palette
 
-Cons:
+**Cons:**
 
 - Fonts (small, pale, roboto..)
 
 ## Structure
 
 - `wizixo/documentation` contains the theme documentation.
-- `wizixo/template` contains the root of the mint website. This is where we work.
+- `wizixo/template` contains the root of the mint website. This is **where we work.**
 - `wizixo/*` contains the gulp file to regenerate the assets.
 
 ## Web pages
@@ -148,3 +148,18 @@ Cons:
         </tr>
     </tbody>
 </table>
+
+# Getting Started :
+
+### Fork this repository and then clone it locally using gitbash or terminal if you are on Linux or macos
+
+
+##  Open your terminal or vs-code terminal and type the following 
+
+```
+cd website-wizixo/wizixo/template
+code .
+firefox mint-main.html (Only for linux-users)
+```
+### You can open the mint-main.html page easily in your browser by opening the **mint-main.html** file .
+
