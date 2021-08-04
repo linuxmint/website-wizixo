@@ -111,7 +111,7 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
     </thead>
     <tbody>
         <tr>
-            <td rowspan=2>Common sections</td>
+            <td rowspan=3>Common sections</td>
             <td>Header</td>
             <td>mint-section-header.html</td>
             <td>HTML head, body all the way down to the menu (included).</td>
@@ -127,13 +127,18 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
             <td>Title section, used at the top of the page in all pages, except the main page.</td>
         </tr>
         <tr>
+            <td>Sponsors footer</td>
+            <td>mint-section-sponsors.tml</td>
+            <td>A sponsor section just above the footer, on all pages except the sponsors, partners and home pages.</td>
+        </tr>
+        <tr>
             <td>Home</td>
             <td>Home page</td>
             <td>mint-page-main.html</td>
             <td>Describes what Mint is, why it's good, to newcomers.</td>
         </tr>
         <tr>
-            <td rowspan=3>Download</td>
+            <td rowspan=7>Download</td>
             <td>Linux Mint 20.2</td>
             <td>mint-page-download.html</td>
             <td>Same as old website</td>
@@ -146,6 +151,26 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
         <tr>
             <td>All versions</td>
             <td>mint-page-download-all.html</td>
+            <td>Same as old website</td>
+        </tr>
+        <tr>
+            <td>Edition</td>
+            <td>mint-page-edition.html</td>
+            <td>Same as old website, download links with mirrors for a particular edition</td>
+        </tr>
+        <tr>
+            <td>Release notes</td>
+            <td>mint-page-notes.html</td>
+            <td>Same as old website</td>
+        </tr>
+        <tr>
+            <td>New features</td>
+            <td>mint-page-features.html</td>
+            <td>Same as old website</td>
+        </tr>
+        <tr>
+            <td>Verify</td>
+            <td>mint-page-verify.html</td>
             <td>Same as old website</td>
         </tr>
         <tr>
