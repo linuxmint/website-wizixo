@@ -138,7 +138,7 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
             <td>Describes what Mint is, why it's good, to newcomers.</td>
         </tr>
         <tr>
-            <td rowspan=3>Download</td>
+            <td rowspan=7>Download</td>
             <td>Linux Mint 20.2</td>
             <td>mint-page-download.html</td>
             <td>Same as old website</td>
@@ -151,6 +151,26 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
         <tr>
             <td>All versions</td>
             <td>mint-page-download-all.html</td>
+            <td>Same as old website</td>
+        </tr>
+        <tr>
+            <td>Edition</td>
+            <td>mint-page-edition.html</td>
+            <td>Same as old website, download links with mirrors for a particular edition</td>
+        </tr>
+        <tr>
+            <td>Release notes</td>
+            <td>mint-page-notes.html</td>
+            <td>Same as old website</td>
+        </tr>
+        <tr>
+            <td>New features</td>
+            <td>mint-page-features.html</td>
+            <td>Same as old website</td>
+        </tr>
+        <tr>
+            <td>Verify</td>
+            <td>mint-page-verify.html</td>
             <td>Same as old website</td>
         </tr>
         <tr>
