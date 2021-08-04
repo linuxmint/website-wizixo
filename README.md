@@ -111,7 +111,7 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
     </thead>
     <tbody>
         <tr>
-            <td rowspan=2>Common sections</td>
+            <td rowspan=3>Common sections</td>
             <td>Header</td>
             <td>mint-section-header.html</td>
             <td>HTML head, body all the way down to the menu (included).</td>
@@ -125,6 +125,11 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
             <td>Title</td>
             <td>mint-section-title.html</td>
             <td>Title section, used at the top of the page in all pages, except the main page.</td>
+        </tr>
+        <tr>
+            <td>Sponsors footer</td>
+            <td>mint-section-sponsors.tml</td>
+            <td>A sponsor section just above the footer, on all pages except the sponsors, partners and home pages.</td>
         </tr>
         <tr>
             <td>Home</td>
