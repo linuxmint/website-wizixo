@@ -395,6 +395,11 @@
           fullWithvideo();
           jarallax();
           myWave();
+
+          lightbox.option({
+            resizeDuration: 200,
+            wrapAround: true,
+          });
     });
 
 })(jQuery);
