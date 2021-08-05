@@ -17,6 +17,15 @@
   width: 24px;
 }
 
+.partner-flag {
+  width: 22px;
+}
+
+
 .mt-title {
   margin-top: 9rem !important;
+}
+
+.partner-logo {
+  max-height: 90px;
 }
