@@ -29,3 +29,7 @@
 .partner-logo {
   max-height: 90px;
 }
+
+.gg-box img {
+  border-radius: 3px;
+}
