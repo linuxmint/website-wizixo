@@ -1,15 +1,15 @@
 'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('node-sass'));
+const browserSync = require('browser-sync').create();
 
-var Paths = {
-    TEMPLATE: './template',
-    SCSS: 'template/assets/scss/**/*.scss',
-    CSS: 'template/assets/css/',
-    HTML: 'template/**/*.html'
-}
+const Paths = {
+  TEMPLATE: './dist',
+  SCSS: './dist/assets/scss/**/*.scss',
+  CSS: './dist/assets/css/',
+  HTML: './dist/**/*.html'
+};
 
 // Compile sass into CSS
 gulp.task('sass', function() {
