@@ -7,9 +7,9 @@
             <div class="col-lg-10 mb-4">
 
                 <ul class="nav nav-tabs tab-line">
-                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#tab1"> CINNAMON </a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab2"> MATE </a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab3"> XFCE </a> </li>
+                    <li class="nav-item"> <a class="nav-link gallery-tab active" onclick="switchToTab('cinnamon-gallery', this)" href="#"> CINNAMON </a> </li>
+                    <li class="nav-item"> <a class="nav-link gallery-tab" onclick="switchToTab('mate-gallery', this)" href="#"> MATE </a> </li>
+                    <li class="nav-item"> <a class="nav-link gallery-tab" onclick="switchToTab('xfce-gallery', this)" href="#"> XFCE </a> </li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane show active" id="tab1">
@@ -32,11 +32,7 @@
                                 <img src="img/screenshots/c15.png">
                                 <img src="img/screenshots/c16.png">
                             </div>
-                        </div>
-                    </div> <!-- end tab -->
-                    <div class="tab-pane" id="tab2">
-                        <div class="gg-container">
-                            <div class="gg-box" id="mate-gallery">
+                            <div class="gg-box d-none" id="mate-gallery">
                                 <img src="img/screenshots/m1.png">
                                 <img src="img/screenshots/m2.png">
                                 <img src="img/screenshots/m3.png">
@@ -51,11 +47,7 @@
                                 <img src="img/screenshots/m12.png">
                                 <img src="img/screenshots/m13.png">
                             </div>
-                        </div>
-                    </div> <!-- end tab -->
-                    <div class="tab-pane" id="tab3">
-                        <div class="gg-container">
-                            <div class="gg-box" id="xfce-gallery">
+                            <div class="gg-box d-none" id="xfce-gallery">
                                 <img src="img/screenshots/x1.png">
                                 <img src="img/screenshots/x2.png">
                                 <img src="img/screenshots/x3.png">
@@ -68,6 +60,7 @@
                             </div>
                         </div>
                     </div> <!-- end tab -->
+                    
                 </div> <!-- end tab content -->
 
             </div>
@@ -77,6 +70,7 @@
 
 <script type="text/javascript" src="js/grid-gallery.min.js"></script>
 <script>
+    
     gridGallery({
         selector: "#cinnamon-gallery",
         layout: "square"
@@ -89,6 +83,15 @@
         selector: "#xfce-gallery",
         layout: "square"
     });
+
+    function switchToTab(id, clickedElement) {
+        $('.gallery-tab').removeClass("active");
+        $(clickedElement).addClass("active");
+        $('.gg-box').addClass("d-none");
+        $("#" + id).removeClass('d-none');
+    }
+
+    
 </script>
 
 <include src="mint-section-sponsors.html"/>
