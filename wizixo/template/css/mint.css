@@ -1,0 +1,35 @@
+@media (max-width: 2105px) {
+  .nav-item:nth-last-of-type(1) {
+    position: unset;
+  }
+
+  .navbar-nav {
+    position: relative;
+  }
+
+  .nav-item:nth-last-of-type(-n + 2) > .dropdown-menu {
+    right: 0px;
+    left: unset;
+  }
+}
+
+.flag {
+  width: 24px;
+}
+
+.partner-flag {
+  width: 22px;
+}
+
+
+.mt-title {
+  margin-top: 9rem !important;
+}
+
+.partner-logo {
+  max-height: 90px;
+}
+
+.gg-box img {
+  border-radius: 3px;
+}
