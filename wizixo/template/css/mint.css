@@ -29,3 +29,15 @@
 .partner-logo {
   max-height: 90px;
 }
+
+.team-item {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.team-item:hover {
+   border-color: #68c174 !important;
+}
+.team-item img {
+    max-height: 200px;
+    max-width: 200px;
+}
