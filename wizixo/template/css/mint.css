@@ -30,7 +30,9 @@
 }
 
 .team-item {
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding:  20px;
+    height: 330px;
 }
 
 .team-item:hover {
@@ -39,7 +41,6 @@
 
 .team-item img {
     max-height: 200px;
-    max-width: 200px;
 }
 
 .gg-box img {
