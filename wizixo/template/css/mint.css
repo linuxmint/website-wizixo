@@ -29,17 +29,17 @@
     max-height: 90px;
 }
 
-.team-item {
+.store .team-item {
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 20px;
     height: 350px;
 }
 
-.team-item:hover {
+.store .team-item:hover {
     border-color: #68c174 !important;
 }
 
-.team-item img {
+.store .team-item img {
     max-height: 200px;
 }
 
