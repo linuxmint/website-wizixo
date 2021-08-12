@@ -50,3 +50,66 @@
 .text-mini {
     font-size: 12px;
 }
+
+.sponsor {
+    background: #ffffff;
+    margin: 20px;
+    padding: 10px;
+}
+
+.community-sponsor {
+    background: #ffffff;
+    margin: 10px;
+    padding: 5px;
+}
+
+.gold-sponsor {
+    float: center;
+    width:  400px;
+    height: 200px;
+    object-fit: scale-down;
+}
+
+.silver-sponsor {
+    float: center;
+    width:  300px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.bronze-sponsor {
+    float: center;
+    width:  200px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+.sponsor-footer {
+    float: center;
+    width:  150px;
+    height: 75px;
+    object-fit: scale-down;
+    margin: 30px;
+}
+
+.gold-main-logo {
+    width:  200px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+.silver-main-logo {
+    width:  150px;
+    height: 75px;
+    object-fit: scale-down;
+}
+
+.bronze-main-logo {
+    width:  100px;
+    height: 50px;
+    object-fit: scale-down;
+}
+
+img.greyish {
+   filter: sepia(100%) saturate(0%);
+}
