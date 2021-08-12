@@ -2,7 +2,7 @@
 <svg width="308" height="308" version="1.1" viewBox="0 0 308 308" xmlns="http://www.w3.org/2000/svg">
  <title>LinuxMint logo</title>
  <g transform="translate(-54,-62)">
-  <g fill="none" stroke="#00b894" stroke-width="24">
+  <g fill="none" stroke="#fff" stroke-width="24">
    <path d="m136 138v108c0 19.882 16.118 36 36 36h72c19.882 0 36-16.118 36-36v-60c0-13.255-10.745-24-24-24s-24 10.745-24 24v60-60c0-13.255-10.745-24-24-24s-24 10.745-24 24v60" color="#000000" color-rendering="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
    <circle cx="209" cy="217" r="142" stroke-linecap="round"/>
   </g>
