@@ -6,7 +6,7 @@ os.chdir("wizixo/template/")
 for page in os.listdir("."):
     if page.startswith("mint-page-") and page.endswith(".html"):
         new_page = page.replace("page-", "")
-        with open(page) as source:
+        with open(page,encoding='utf8') as source:
             with open(new_page, "w") as destination:
                 print("Generating %s from %s" % (new_page, page))
                 for line in source:
