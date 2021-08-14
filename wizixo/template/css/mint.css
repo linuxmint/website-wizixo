@@ -1,35 +1,115 @@
 @media (max-width: 2105px) {
-  .nav-item:nth-last-of-type(1) {
-    position: unset;
-  }
+    .nav-item:nth-last-of-type(1) {
+        position: unset;
+    }
 
-  .navbar-nav {
-    position: relative;
-  }
+    .navbar-nav {
+        position: relative;
+    }
 
-  .nav-item:nth-last-of-type(-n + 2) > .dropdown-menu {
-    right: 0px;
-    left: unset;
-  }
+    .nav-item:nth-last-of-type(-n + 2) > .dropdown-menu {
+        right: 0px;
+        left: unset;
+    }
 }
 
 .flag {
-  width: 24px;
+    width: 24px;
 }
 
 .partner-flag {
-  width: 22px;
+    width: 22px;
 }
 
-
 .mt-title {
-  margin-top: 9rem !important;
+    margin-top: 9rem !important;
 }
 
 .partner-logo {
-  max-height: 90px;
+    max-height: 90px;
+}
+
+.store .team-item {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 350px;
+}
+
+.store .team-item:hover {
+    border-color: #68c174 !important;
+}
+
+.store .team-item img {
+    max-height: 200px;
 }
 
 .gg-box img {
-  border-radius: 3px;
+    border-radius: 3px;
+}
+
+.text-mini {
+    font-size: 12px;
+}
+
+.sponsor {
+    background: #ffffff;
+    margin: 20px;
+    padding: 10px;
+}
+
+.community-sponsor {
+    background: #ffffff;
+    margin: 10px;
+    padding: 5px;
+}
+
+.gold-sponsor {
+    float: center;
+    width:  400px;
+    height: 200px;
+    object-fit: scale-down;
+}
+
+.silver-sponsor {
+    float: center;
+    width:  300px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.bronze-sponsor {
+    float: center;
+    width:  200px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+.sponsor-footer {
+    float: center;
+    width:  150px;
+    height: 75px;
+    object-fit: scale-down;
+    margin: 30px;
+}
+
+.gold-main-logo {
+    width:  200px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+.silver-main-logo {
+    width:  150px;
+    height: 75px;
+    object-fit: scale-down;
+}
+
+.bronze-main-logo {
+    width:  100px;
+    height: 50px;
+    object-fit: scale-down;
+}
+
+img.greyish {
+   filter: sepia(100%) saturate(0%);
 }

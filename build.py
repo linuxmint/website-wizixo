@@ -15,7 +15,7 @@ for page in os.listdir(template_directory):
     if page.startswith("mint-page-") and page.endswith(".html"):
         shutil.copy2(template_directory + page, dist_directory + page)
         new_page = page.replace("page-", "")
-        with open(template_directory + page) as source:
+        with open(template_directory + page, encoding='utf8') as source:
             with open(dist_directory + new_page, "w") as destination:
                 print("Generating %s from %s" % (new_page, page))
                 for line in source:

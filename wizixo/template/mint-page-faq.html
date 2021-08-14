@@ -1,85 +1,556 @@
-<include src="mint-section-header.html"/>
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Linux Mint</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Creative Multipurpose Bootstrap Template">
 
-	<include src="mint-section-title.html" title="Frequently Asked Questions"/>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico">
 
-	<section class="pb-3">
-		<div class="container">
-			<div class="row">
-				<!-- accordion gradient -->
-				<div class="col-md-12 mb-5">
-					<div class="accordion mb-0 accordion-grad" id="accordion3">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CPlayfair+Display:400,400i,700,700i%7CRoboto:400,400i,500,700" rel="stylesheet">
 
-						<!-- item -->
-						<div class="accordion-item">
-							<div class="accordion-title">
-								<a class="h6 mb-0" data-toggle="collapse" href="#collapse-1">What is Linux Mint? </a>
-							</div>
-							<div class="collapse show" id="collapse-1" data-parent="#accordion3">
-								<div class="accordion-content">
-									<p>Linux Mint is a free Linux-based operating system designed for use on desktop computers.  </p>
-								</div>
-							</div>
+	<!-- Plugins CSS -->
+	<script src="https://kit.fontawesome.com/bc12959002.js" crossorigin="anonymous"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/font-awesome.min.css" /> -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/themify-icons/css/themify-icons.css" />
+	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/vendor/owlcarousel/css/owl.carousel.min.css" />
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/grid-gallery.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mint.css" />
+
+</head>
+
+<body>
+
+	<!-- =======================
+	header Start-->
+	<header class="navbar-transparent navbar-sticky navbar-primary">
+
+		<div class="navbar-top d-none d-lg-block">
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center">
+					<!-- navbar top Left-->
+					<div class="d-flex align-items-center">
+						<!-- Language -->
+						<div class="dropdown">
+						  <a class="dropdown-toggle" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="dropdown-item-icon" src="assets/images/flags/uk.svg" alt=""> English </a>
+						  <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage">
+						  	<span class="dropdown-item-text">Select language</span>
+						  	<div class="dropdown-divider"></div>
+						    <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="assets/images/flags/sp.svg" alt=""> Español</a>
+						    <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="assets/images/flags/fr.svg" alt=""> Français</a>
+						    <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="assets/images/flags/gr.svg" alt=""> Deutsch</a>
+						  </div>
 						</div>
+					</div>
 
+					<!-- navbar top Right-->
+					<div class="d-flex align-items-center">
+						<!-- top link -->
 
-						<!-- item -->
-						<div class="accordion-item">
-							<div class="accordion-title">
-								<a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-2">Is Linux Mint suitable for individuals? </a>
-							</div>
-							<div class="collapse" id="collapse-2" data-parent="#accordion3">
-								<div class="accordion-content">
-									<p>Yes, definitely. Linux Mint is designed to be comfortable and easy to use but also powerful and configurable. Everything is done to make the user experience better. </p>
-									<p>Linux Mint is one of the most popular desktop Linux distributions and used by millions of people. </p>
-									<p>User feedback is very important to us and used to consistently improve the quality of Linux Mint.</p>
+						<!-- top social -->
+						<ul class="social-icons">
+							<li class="social-icons-item social-rss m-0">
+								<a class="social-icons-link w-auto px-2" href="https://blog.linuxmint.com/?feed=rss2"><i class="fa fa-rss"></i></a>
+							</li>
+							<li class="social-icons-item social-envelope m-0">
+								<a class="social-icons-link w-auto px-2" href="mailto:root@linuxmint.com"><i class="fa fa-envelope"></i></a>
+							</li>
+							<li class="social-icons-item social-hastag m-0">
+								<a class="social-icons-link w-auto px-2" href="https://widget00.mibbit.com/?settings=afafcb2fef3d61ee26d44fe55394b54b&server=irc.spotchat.org&channel=%23linuxmint-help&autoConnect=1"><i class="fa fa-hashtag"></i></a>
+							</li>
+							<li class="social-icons-item social-facebook m-0">
+								<a class="social-icons-link w-auto px-2" href="https://www.facebook.com/pages/Linux-Mint/185238108180410"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li class="social-icons-item social-github m-0">
+								<a class="social-icons-link w-auto px-2" href="https://www.github.com/linuxmint"><i class="fa fa-github"></i></a>
+							</li>
+							<li class="social-icons-item social-twitter m-0">
+								<a class="social-icons-link w-auto pl-2" href="https://twitter.com/linux_mint"><i class="fa fa-twitter"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Logo Nav Start -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<!-- Logo -->
+				<a class="navbar-brand" href="mint-main.html">
+					<img src="img/logo-mono.svg" width="200" />
+				</a>
+				<!-- Menu opener button -->
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"> </span>
+			  </button>
+				<!-- Main Menu Start -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav ml-auto">
+
+						<!-- Home -->
+						<li class="nav-item">
+							<a class="nav-link active" href="mint-main.html">Home</a>
+						</li>
+
+						<!-- Download menu -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="demosMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+							<div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
+								<div class="d-block d-sm-flex">
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header">Latest version</li>
+										<li> <a class="dropdown-item" href="mint-download.html">Linux Mint 20.2<span class="badge badge-success ml-2">Recommended</span></a> </li>
+									</ul>
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header">Other versions</li>
+										<li> <a class="dropdown-item" href="mint-lmde.html">LMDE 4</a> </li>
+										<li> <a class="dropdown-item" href="mint-download-all.html">All versions</a> </li>
+									</ul>
+								</div>
+								<!-- bottom part -->
+								<div class="w-100 bg-grad pattern-overlay-2 p-4 mt-3 all-text-white d-none d-lg-flex">
+									<div class="align-self-center mr-4">
+										<h4 class="mb-0 text-nowrap">Checkout the doc!</h4>
+										<p class="mb-0 small">Follow the guide to learn how to download and install Linux Mint.</p>
+									</div>
+									<a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ml-auto overflow-visible">Installation Guide</a>
 								</div>
 							</div>
-						</div>
+						</li>
 
-
-						<!-- item -->
-						<div class="accordion-item">
-							<div class="accordion-title">
-								<a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-3">Is Linux Mint suitable for companies? </a>
-							</div>
-							<div class="collapse" id="collapse-3" data-parent="#accordion3">
-								<div class="accordion-content">
-									<p>Yes. Linux Mint provides Long-Term Support (LTS) releases which are supported for a duration of 5 years. </p>
+						<!-- Project menu -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="demosMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project</a>
+							<div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
+								<div class="d-block d-sm-flex">
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header">Funding</li>
+										<li> <a class="dropdown-item" href="#">(Donors)</a> </li>
+										<li> <a class="dropdown-item" href="#">(Sponsors)</a> </li>
+										<li> <a class="dropdown-item" href="mint-partners.html">Partners</a> </li>
+										<li> <a class="dropdown-item" href="mint-store.html">Store</a> </li>
+									</ul>
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header">Contributing</li>
+										<li> <a class="dropdown-item" href="mint-get-involved.html">Get Involved</a> </li>
+										<li> <a class="dropdown-item" href="#">(Development)</a> </li>
+										<li> <a class="dropdown-item" href="#">(Translations)</a> </li>
+										<li> <a class="dropdown-item" href="mint-mirrors.html">Mirrors</a> </li>
+									</ul>
+								</div>
+								<!-- bottom part -->
+								<div class="w-100 bg-grad pattern-overlay-2 p-4 mt-3 all-text-white d-none d-lg-flex">
+									<div class="align-self-center mr-4">
+										<p class="mb-0 small">Every little helps, don't hesitate to get involved.</p>
+									</div>
 								</div>
 							</div>
-						</div>
+						</li>
 
-
-						<!-- item -->
-						<div class="accordion-item">
-							<div class="accordion-title">
-								<a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-4">Does Linux Mint include proprietary drivers? </a>
-							</div>
-							<div class="collapse" id="collapse-4" data-parent="#accordion3">
-								<div class="accordion-content">
-									<p>No. Proprietary drivers such as the ATI or Nvidia drivers are easy to install but not installed by default. </p>
+						<!-- About menu -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="demosMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+							<div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
+								<div class="d-block d-sm-flex">
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header">Linux Mint</li>
+										<li> <a class="dropdown-item" href="mint-about.html">About Linux Mint</a> </li>
+										<li> <a class="dropdown-item" href="mint-faq.html">FAQ</a> </li>
+										<li> <a class="dropdown-item" href="#">(Documentation)</a> </li>
+										<li> <a class="dropdown-item" href="mint-screenshots.html">Screenshots</a> </li>
+										<li> <a class="dropdown-item" href="mint-team.html">Team</a> </li>
+										<li> <a class="dropdown-item" href="mint-contact.html">Contact Us</a> </li>
+									</ul>
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header">Legal</li>
+										<li> <a class="dropdown-item" href="mint-privacy.html">Privacy &amp; Cookies</a> </li>
+										<li> <a class="dropdown-item" href="#">(Logo and Artwork)</a> </li>
+									</ul>
 								</div>
 							</div>
-						</div>
+						</li>
 
-
-						<!-- item -->
-						<div class="accordion-item">
-							<div class="accordion-title">
-								<a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-5">What about proprietary software? </a>
-							</div>
-							<div class="collapse" id="collapse-5" data-parent="#accordion3">
-								<div class="accordion-content">
-									<p>Linux Mint does not support any political or ideological stance against any software programs or editors no matter what license they use. With that said, most if not all (depending on the edition) software used in Linux Mint is Free and Open Source. We believe in Open Source as a choice, not as a constraint. We think it makes sense to share code, to credit the technology we use, to let people help us, to allow others to build upon what we are making and to enable progress in general. We also enjoy sharing with the community, so we license our software under the GPL and the vast majority of components we use are Free and Open Source.  </p>
+						<!-- Links menu -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="demosMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+							<div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
+								<div class="d-block d-sm-flex">
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header">Official</li>
+										<li> <a class="dropdown-item" href="mint-main.html"><i class="fa fa-igloo"></i> Website<span class="badge badge-success ml-2">Here</span></a> </li>
+										<li> <a class="dropdown-item" href="https://blog.linuxmint.com"><i class="fas fa-blog"></i> Blog</a> </li>
+										<li> <a class="dropdown-item" href="https://forums.linuxmint.com"><i class="fa fa-comments"></i> Forums</a> </li>
+										<li> <a class="dropdown-item" href="https://community.linuxmint.com"><i class="fas fa-users"></i> Community website</a> </li>
+									</ul>
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header">Social</li>
+										<li> <a class="dropdown-item" href="https://www.github.com/linuxmint"><i class="fa fa-github"></i> Github</a> </li>
+										<li> <a class="dropdown-item" href="https://www.facebook.com/pages/Linux-Mint/185238108180410"><i class="fa fa-facebook"></i> Facebook</a> </li>
+										<li> <a class="dropdown-item" href="https://twitter.com/linux_mint"><i class="fa fa-twitter"></i> Twitter</a> </li>
+										<li> <a class="dropdown-item" href="https://widget00.mibbit.com/?settings=afafcb2fef3d61ee26d44fe55394b54b&server=irc.spotchat.org&channel=%23linuxmint-help&autoConnect=1"><i class="fa fa-hashtag"></i> IRC Chat</a> </li>
+									</ul>
+									<ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+										<li class="dropdown-header mt-3 mt-sm-0">Community</li>
+										<li> <a class="dropdown-item" href="https://www.reddit.com/r/linuxmint/"><i class="fa fa-reddit"></i> Reddit</a> </li>
+										<li> <a class="dropdown-item" href="https://discord.gg/mint"><i class="fab fa-discord"></i> Discord</a> </li>
+										<li> <a class="dropdown-item" href="mint-communities.html"><i class="fas fa-globe"></i> Local communities</a> </li>
+									</ul>
 								</div>
+								<!-- mega menu Bottom -->
+								<div class="w-100 bg-grad pattern-overlay-2 p-4 mt-3 all-text-white d-none d-lg-flex">
+									<div class="align-self-center mr-4">
+										<p class="mb-0 small">Websites in the right column are maintained by the community.</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Main Menu End -->
+				<!-- Header Extras Start-->
+				<div class="navbar-nav">
+					<!-- Donate button -->
+					<div class="nav-item border-0 d-none d-lg-inline-block align-self-center border-0 px-lg-4">
+						<a href="#" class=" btn btn-sm btn-white mb-0">Donate</a>
+					</div>
+				</div>
+				<!-- Header Extras End-->
+			</div>
+		</nav>
+		<!-- Logo Nav End -->
+	</header>
+	<!-- =======================
+	header End-->
+<div class="left bg-grad pattern-overlay-2">
+	<div class="container">
+		<div class="row all-text-white">
+			<div class="col-md-12 align-self-center">
+				<h1 class="font-weight-bold display-5 display-lg-4 mb-2 mb-md-n0 mt-title">$title</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+
+                <h2 class="mb-4 text-primary">General</h2>
+
+                <div class="accordion mb-0 accordion-grad" id="accordion1">
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0" data-toggle="collapse" href="#collapse-100">What is Linux Mint?</a>
+                        </div>
+                        <div class="collapse show" id="collapse-100" data-parent="#accordion1">
+                            <div class="accordion-content">
+                                <p>Linux Mint is a free Linux-based operating system designed for use on desktop and laptop computers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-101">Is Linux Mint suitable for individuals?</a>
+                        </div>
+                        <div class="collapse" id="collapse-101" data-parent="#accordion1">
+                            <div class="accordion-content">
+                                <p>Yes, definitely. Linux Mint is designed to be comfortable and easy to use but also powerful and configurable. Everything is done to make the user experience better.</p>
+                                <p>Linux Mint is one of the most popular desktop Linux distributions and used by millions of people.</p>
+                                <p>User feedback is very important to us and used to consistently improve the quality of Linux Mint.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-102">Is Linux Mint suitable for companies?</a>
+                        </div>
+                        <div class="collapse" id="collapse-102" data-parent="#accordion1">
+                            <div class="accordion-content">
+                                <p>Yes. Linux Mint provides Long-Term Support (LTS) releases which are supported for a duration of 5 years.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-103">What are the system requirements to run Linux Mint?</a>
+                        </div>
+                        <div class="collapse" id="collapse-103" data-parent="#accordion1">
+                            <div class="accordion-content">
+                                <p><ul>
+                                    <li>2GB RAM (4GB recommended for a comfortable usage).</li>
+                                    <li>20GB of disk space (100GB recommended).</li>
+                                    <li>1024×768 resolution (on lower resolutions, press ALT to drag windows with the mouse if they don’t fit in the screen).
+                                    </li>
+                                </ul></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="mb-4 text-primary">Licensing</h2>
+
+                <div class="accordion mb-0 accordion-grad" id="accordion2">
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-6">Can I use Linux Mint for commercial purpose?</a>
+                        </div>
+                        <div class="collapse" id="collapse-6" data-parent="#accordion2">
+                            <div class="accordion-content">
+                                <p>Yes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-7">Can I sell Linux Mint?</a>
+                        </div>
+                        <div class="collapse" id="collapse-7" data-parent="#accordion2">
+                            <div class="accordion-content">
+                                <p>Yes, you can sell Linux Mint without permission. What you cannot do is pretend to be Linux Mint or to let people believe you are affiliated with Linux Mint.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-8">Can I install Linux Mint on computers I sell to my customers?</a>
+                        </div>
+                        <div class="collapse" id="collapse-8" data-parent="#accordion2">
+                            <div class="accordion-content">
+                                <p>Yes. Make sure you pre-install Linux Mint in OEM mode to ensure your customers get the opportunity to choose their username and password after they boot their computer for the first time. Check the <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/oem.html">OEM section</a> of the installation guide.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-9">Can I use the Linux Mint logo and/or screenshots?</a>
+                        </div>
+                        <div class="collapse" id="collapse-9" data-parent="#accordion2">
+                            <div class="accordion-content">
+                                <p>Yes. You can use, promote and show Linux Mint, screenshots of Linux Mint and the Linux Mint logo in articles, magazines, websites, books, designs, movies, or any document as long as you don't pretend to be Linux Mint and that you don't let people believe you are affiliated with Linux Mint.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-4">Does Linux Mint include proprietary drivers?</a>
+                        </div>
+                        <div class="collapse" id="collapse-4" data-parent="#accordion2">
+                            <div class="accordion-content">
+                                <p>No. Proprietary drivers such as the ATI or Nvidia drivers are easy to install but not installed by default.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-5">What about proprietary software?</a>
+                        </div>
+                        <div class="collapse" id="collapse-5" data-parent="#accordion2">
+                            <div class="accordion-content">
+                                <p>Linux Mint does not support any political or ideological stance against any software programs or editors no matter what license they use. With that said, most if not all (depending on the edition) software used in Linux Mint is Free and Open Source. We believe in Open Source as a choice, not as a constraint. We think it makes sense to share code, to credit the technology we use, to let people help us, to allow others to build upon what we are making and to enable progress in general. We also enjoy sharing with the community, so we license our software under the GPL and the vast majority of components we use are Free and Open Source.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="bg-dark">
+	<div class="container">
+		<div class="row justify-content-between align-items-center">
+			<div class="col-sm-2">
+				<h5 class="text-white">Brought to you by:</h5>
+			</div>
+			<div class="col-sm-10">
+				<div class="owl-carousel owl-grab arrow-hover arrow-dark owl-loaded owl-drag" data-arrow="false" data-dots="false" data-items-xl="6" data-items-lg="5" data-items-md="4" data-items-sm="3" data-items-xs="2" data-autoplay="4500">
+
+					<div class="owl-stage-outer">
+						<div class="owl-stage" style="transform: translate3d(-1833px, 0px, 0px); transition: all 0.8s ease 0s; width: 3334px;">
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/03.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/04.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/05.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/06.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/07.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/08.png" alt=""></div>
+							</div>
+							<div class="owl-item" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/01.png" alt=""></div>
+							</div>
+							<div class="owl-item" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/02.png" alt=""></div>
+							</div>
+							<div class="owl-item" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/03.png" alt=""></div>
+							</div>
+							<div class="owl-item" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/04.png" alt=""></div>
+							</div>
+							<div class="owl-item" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/05.png" alt=""></div>
+							</div>
+							<div class="owl-item active" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/06.png" alt=""></div>
+							</div>
+							<div class="owl-item active" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/07.png" alt=""></div>
+							</div>
+							<div class="owl-item active" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/08.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned active" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/01.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned active" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/02.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned active" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/03.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/04.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/05.png" alt=""></div>
+							</div>
+							<div class="owl-item cloned" style="width: 136.667px; margin-right: 30px;">
+								<div class="item"><img class="w-75 mx-auto" src="assets/images/clients/06.png" alt=""></div>
 							</div>
 						</div>
 					</div>
+					<div class="owl-nav disabled">
+						<button type="button" role="presentation" class="owl-prev"><i class="ti-angle-left"></i></button>
+						<button type="button" role="presentation" class="owl-next"><i class="ti-angle-right"></i></button>
+					</div>
+					<div class="owl-dots disabled">
+					</div>
 				</div>
-
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
+<!-- =======================
+	footer  -->
+	<footer class="footer footer-dark pt-6 position-relative">
+		<div class="footer-content">
+			<div class="container">
+				<div class="row">
+					<!-- Footer widget 1 -->
+					<div class="col-md-3 col-sm-6 order-sm-1">
+						<div class="widget address">
+							<a href="mint-main.html" class="footer-logo mb-3 d-block">
+							<img src="img/logo.svg"/>
+							</a>
+							<p>Thanks to your donations and advertising Linux Mint is completely free of charge. We hope you'll enjoy using it as much as we enjoy working on it.</p>
+						</div>
+					</div>
+					<!-- Footer widget 2 -->
+					<div class="col-md-2 col-sm-4 order-sm-3">
+						<div class="widget">
+							<h6>Quick Links</h6>
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="mint-download.html">Download</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">(Donate)</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">(Get Involved)</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Footer widget 3 -->
+					<div class="col-md-2 col-sm-4 order-sm-4">
+						<div class="widget">
+							<h6>Info</h6>
+							<ul class="nav flex-column primary-hover">
+								<li class="nav-item"><a class="nav-link" href="#">(About)</a></li>
+								<li class="nav-item"><a class="nav-link" href="mint-faq.html">FAQs</a></li>
+								<li class="nav-item"><a class="nav-link" href="mint-privacy.html">Privacy &amp; Cookies</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Footer widget 4 -->
+					<div class="col-md-2 col-sm-4 order-sm-5">
+						<div class="widget">
+							<h6>Support</h6>
+							<ul class="nav flex-column primary-hover">
+								<li class="nav-item"><a class="nav-link" href="https://linuxmint-installation-guide.readthedocs.io/en/latest/">Installation Guide</a></li>
+								<li class="nav-item"><a class="nav-link" href="https://linuxmint-user-guide.readthedocs.io/en/latest/">User Guide</a></li>
+								<li class="nav-item"><a class="nav-link" href="https://forums.linuxmint.com">Forums</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Footer widget 5 -->
+					<div class="col-md-3 col-sm-6 order-sm-2">
+						<p>Almost all the packages we distribute are open-source. You can find their source code on <a href="https://packages.ubuntu.com">https://packages.ubuntu.com</a>, <a href="http://packages.linuxmint.com">http://packages.linuxmint.com</a> or <a href="https://github.com/linuxmint">https://github.com/linuxmint</a>. If you can't find what you're looking for contact us.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider mt-3"></div>
+		<!--footer copyright -->
+		<div class="footer-copyright py-3">
+			<div class="container">
+				<div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
+					<!-- copyright text -->
+					<div class="copyright-text">Linux Mint is copyrighted since 2006 and trademarked through the Linux Mark Institute. All rights reserved.<br/>Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- =======================
+	footer  -->
 
-<include src="mint-section-sponsors.html"/>
-<include src="mint-section-footer.html"/>
+	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
+
+	<!--Global JS-->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/popper.js/umd/popper.min.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!--Vendors-->
+	<script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+	<script src="assets/vendor/owlcarousel/js/owl.carousel.min.js"></script>
+
+	<!--Template Functions-->
+	<script src="assets/js/functions.js"></script>
+
+</body>
+</html>
