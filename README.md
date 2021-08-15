@@ -48,7 +48,7 @@ Cons:
 Clone the project:
 
 ```bash
-git clone https://github.com/linuxmint/website-wizixo.git
+git clone --recurse-submodules https://github.com/linuxmint/website-wizixo.git
 ```
 
 Navigate to project folder:

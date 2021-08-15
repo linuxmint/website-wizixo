@@ -1,0 +1,3 @@
+[submodule "wizixo/template/img/brand-logo"]
+	path = wizixo/template/img/brand-logo
+	url = https://github.com/linuxmint/brand-logo
