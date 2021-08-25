@@ -1,10 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="48" height="48" version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
- <title>LinuxMint logo</title>
- <g transform="translate(-184 -192)">
-  <g transform="matrix(.1875 0 0 .1875 169 175.5)">
-   <circle cx="208" cy="216" r="128" fill="#fff"/>
-   <path transform="translate(80,88)" d="m127.68 0a128 128 0 0 0-64.676 17.732v140.27c0 14.513 11.487 26 26 26h78c14.513 0 26-11.487 26-26v-65c0-7.3337-5.6663-13-13-13s-13 5.6663-13 13v65h-26v-65c0-7.3337-5.6663-13-13-13s-13 5.6663-13 13v65h-26v-65c0-21.385 17.615-39 39-39 9.9904 0 19.067 3.9494 26 10.227 6.9332-6.2772 16.01-10.227 26-10.227 21.385 0 39 17.615 39 39v65c0 28.565-23.435 52-52 52h-78c-28.565 0-52-23.435-52-52v-120.02a128 128 0 0 0-37 90.018 128 128 0 0 0 128 128 128 128 0 0 0 128-128 128 128 0 0 0-128-128 128 128 0 0 0-0.32422 0z" fill="#7ec462"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="/home/vlad/Desktop/Scratch/LM-logo/linuxmint-icon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="20.625"
+     inkscape:cy="26.339286"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-271.59998)">
+    <g
+       transform="matrix(0.13636364,0,0,0.13636363,-3.0617076e-8,243.79998)"
+       id="layer1-0"
+       inkscape:label="Calque 1"
+       style="stroke:none">
+      <path
+         id="path1374-6"
+         style="opacity:1;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:6.1257"
+         d="m 93.133331,250.43332 c -2e-6,12.86027 0,46.56667 0,46.56667 L 2.2452521e-7,203.86666 c 0,0 35.29371477547479,-1e-5 46.56666577547479,-1e-5 25.718061,0 46.566668,20.84861 46.566665,46.56667 z"
+         sodipodi:nodetypes="sccss" />
+      <g
+         style="stroke:none;stroke-opacity:1"
+         id="layer3"
+         inkscape:label="Layer 1"
+         transform="matrix(0.26458333,0,0,0.26458333,-4.2333326,195.39998)" />
+      <path
+         id="path1139"
+         style="opacity:1;fill:#388e3c;fill-opacity:1;stroke:none;stroke-width:6.1257"
+         d="m 2.2452554e-7,250.43332 c 1.99999996e-6,-12.86027 0,-46.56667 0,-46.56667 L 93.133331,296.99998 c 0,0 -35.293715,1e-5 -46.566666,1e-5 C 20.848604,296.99999 -2.7754745e-6,276.15138 2.2452554e-7,250.43332 Z"
+         sodipodi:nodetypes="sccss" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4193"
+       d="m 2.309091,274.1977 v 5.19545 c 0,1.26844 1.0406528,2.3091 2.3090909,2.3091 H 8.081818 c 1.2684385,0 2.309091,-1.04065 2.309091,-2.3091 v -2.88636 c 0,-0.94962 -0.782199,-1.73182 -1.731818,-1.73182 -0.443631,0 -0.846673,0.17536 -1.1545455,0.4541 C 7.196673,274.95033 6.793631,274.77497 6.35,274.77497 c -0.949619,0 -1.7318181,0.7822 -1.7318181,1.73182 v 2.88636 h 1.1545456 v -2.88636 c 0,-0.32566 0.251616,-0.57727 0.5772725,-0.57727 0.3256565,0 0.5772725,0.25161 0.5772725,0.57727 v 2.88636 H 8.081818 v -2.88636 c 0,-0.32566 0.2516165,-0.57727 0.577273,-0.57727 0.3256565,0 0.5772725,0.25161 0.5772725,0.57727 v 2.88636 c 0,0.64448 -0.51007,1.15455 -1.1545455,1.15455 H 4.6181819 c -0.6444756,0 -1.1545455,-0.51007 -1.1545455,-1.15455 v -5.19545 z"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#fafafa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.15454;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
   </g>
- </g>
 </svg>
