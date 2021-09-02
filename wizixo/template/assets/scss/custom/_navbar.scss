@@ -69,8 +69,72 @@
   }
 }
 
-.navbar-primary .navbar-toggler-icon {
-    background-image: $navbar-primary-toggler-icon-bg;
+.navbar-primary .navbar-toggler {
+  padding: 0.5em;
+  margin-right: -0.35em;
+  
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    margin: 3px 0px 0px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+
+    span {
+      display: block;
+      background-color: white;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      // Hamburger
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 10px;
+      }
+
+      &:nth-child(4) {
+        top: 20px;
+      }
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .navbar-toggler-icon {
+      // Cross
+      span {
+        &:nth-child(1) {
+          top: 11px;
+          width: 0%;
+          left: 50%;
+        }
+
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+
+        &:nth-child(4) {
+          top: 11px;
+          width: 0%;
+          left: 50%;
+        }
+      }
+    }
+  }
 }
 
 @include media-breakpoint-down(lg){
