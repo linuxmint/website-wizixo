@@ -2,7 +2,6 @@
 import os
 import re
 
-os.chdir("wizixo/template/")
 for page in os.listdir("."):
     if page.startswith("mint-page-") and page.endswith(".html"):
         new_page = page.replace("page-", "")
