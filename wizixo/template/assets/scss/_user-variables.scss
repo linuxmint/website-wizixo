@@ -7,8 +7,11 @@
 // Wizixo variable overrides
 
 // Color system
-$white:       #ffffff;
-$gray-100:    #f7f8f9;
+
+// bg fbfbfb
+
+$white:       #fbfbfb;
+$gray-100:    #f0f1f3;
 $gray-200:    #f0f1f3;
 $gray-300:    #dfe2e5;
 $gray-400:    #d0d4d9;
@@ -80,10 +83,10 @@ $spacers: map-merge(
 
 // Body
 $body-bg:                   $white;
-$body-color:                $gray-600;
+$body-color:                $gray-700;
 
 // Links
-$link-color:                $primary;
+$link-color:                darken($primary, 10%);
 $link-decoration:           none;
 $link-hover-color:          darken($link-color, 10%);
 $link-hover-decoration:     none;
@@ -115,7 +118,7 @@ $transition-base:               all .3s ease-in-out;
 // Fonts
 //
 // Font Families
-$font-family-base:            'Roboto', sans-serif;
+$font-family-base:            "Ubuntu", -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $font-family-heading:         'Poppins', sans-serif;
 $font-family-alt:             'Playfair Display', serif;
 
@@ -126,8 +129,8 @@ $font-weight-bold:            600;
 $font-weight-bolder:          bolder;
 
 // Font Sizes
-$font-size-xs:                .8125rem; //13px
-$font-size-base:              .875rem;  //14px
+$font-size-xs:                .875rem; //15px
+$font-size-base:              .9375rem;  //16px
 $font-size-lg:                $font-size-base * 1.25;
 $font-size-sm:                $font-size-base * .875;
 
@@ -208,7 +211,7 @@ $btn-focus-box-shadow:        $input-btn-focus-box-shadow;
 $btn-disabled-opacity:        .65;
 $btn-active-box-shadow:       none;
 
-$btn-link-disabled-color:     $gray-600;
+$btn-link-disabled-color:     $gray-700;
 $btn-block-spacing-y:         .5rem;
 
 // Button border radius
@@ -252,7 +255,7 @@ $input-focus-color:                     $input-color;
 $input-focus-width:                     $input-border-width;
 $input-focus-box-shadow:                none;
 
-$input-placeholder-color:               $gray-600;
+$input-placeholder-color:               $gray-700;
 
 $input-height-border:                   $input-border-width * 2;
 $input-height:                          auto;
@@ -312,14 +315,14 @@ $dropdown-divider-bg:               $gray-200;
 $dropdown-divider-margin-y:         $nav-divider-margin-y;
 $dropdown-box-shadow:               0px 20px 30px rgba(83, 88, 93, 0.15);
 
-$dropdown-link-color:               $gray-600 !important;
+$dropdown-link-color:               $gray-700 !important;
 $dropdown-link-hover-color:         $primary !important;
 $dropdown-link-hover-bg:            transparent;
 
 $dropdown-link-active-color:        $primary;
 $dropdown-link-active-bg:           transparent;
 
-$dropdown-link-disabled-color:      $gray-600;
+$dropdown-link-disabled-color:      $gray-700;
 
 $dropdown-item-font-weight:         $font-weight-light;
 
@@ -333,8 +336,8 @@ $dropdown-header-font-weight:       $font-weight-bold;
 // Navs 
 $nav-link-padding-y:                .25rem;
 $nav-link-padding-x:                .75rem;
-$nav-link-color:                    $gray-700;
-$nav-link-disabled-color:           $gray-600;
+$nav-link-color:                    $gray-800;
+$nav-link-disabled-color:           $gray-700;
 
 // Navbar
 $navbar-padding-y:                  0;
@@ -365,15 +368,15 @@ $navbar-dark-active-color:          $primary;
 $navbar-dark-disabled-color:        rgba($white, .25);
 $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
 
-$navbar-light-color:                $gray-600;
+$navbar-light-color:                $gray-700;
 $navbar-light-hover-color:          $primary;
 $navbar-light-active-color:         $primary;
 $navbar-light-disabled-color:       rgba($black, .3);
 $navbar-light-toggler-border-color: rgba($black, .1);
 
 $navbar-primary-color:              $white;
-$navbar-primary-hover-color:        $gray-800;
-$navbar-primary-active-color:       $gray-800;
+$navbar-primary-hover-color:        $gray-700;
+$navbar-primary-active-color:       $gray-700;
 $navbar-primary-disabled-color:     rgba($white, .25);
 $navbar-primary-toggler-icon-bg:    str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
 
