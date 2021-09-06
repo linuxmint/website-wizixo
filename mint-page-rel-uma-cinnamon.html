@@ -1,0 +1,162 @@
+<include src="mint-section-header.html"/>
+<include src="mint-section-title.html" title="Release notes"/>
+
+<section class="py-5 position-relative">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-10">
+
+				<p>Linux Mint 20.2 is a long term support release which will be supported until 2025. It comes with updated software and brings refinements and many new features to make your desktop experience more comfortable.</p>
+
+    			<div style="text-align: center;"><a href="https://www.linuxmint.com/pictures/screenshots/uma/cinnamon.png"><img src="https://www.linuxmint.com/pictures/screenshots/uma/thumb_cinnamon.png"></a><br><i><small><b>Linux Mint 20.2 "Uma" Cinnamon Edition</b></small></i></div>
+    		</div>
+
+		<div class="row">
+			<div class="col-lg-10">
+				<h2 class="mb-4 text-primary">Known issues</h2>
+
+				<h4>Snap Store</h4>
+
+    <p>The Snap Store is disabled in Linux Mint 20. For more information on this or to re-enable it read <a href="https://linuxmint-user-guide.readthedocs.io/en/latest/snap.html">https://linuxmint-user-guide.readthedocs.io/en/latest/snap.html</a>.</p>
+
+    <h4>Virtualbox</h4>
+
+      <b>Black screen</b>
+
+        <p>If the screen is black when launching Linux Mint in Virtualbox, change the VirtualBox graphics controller to "VMSVGA". Do this by opening up the settings for your VM and select Display -&gt; Graphics Controller.</p>
+
+      <b>Garbled screen</b>
+
+        <p>If the screen is garbled when launching Linux Mint in Virtualbox, switch to console with HOST+F1 (e.g. the RIGHT Ctrl key, no ALT) and back to tty7 with HOST+F7.</p>
+
+        <p>Another workaround is to disable "nested paging" (in the System -&gt; Acceleration settings) and to increase the video memory to 128MB (in the Display settings).</p>
+
+        <p>Note: This issue only affects the live session. You don't need these workarounds post-installation.</p>
+
+      <b>Guest Additions</b>
+
+        <p>To add support for shared folders, drag and drop, proper acceleration and display resolution in Virtualbox, click on the "Devices" menu of Virtualbox and choose "Insert Guest Additions CD Image". Choose "download" when asked and follow the instructions.</p>
+
+        <p>For more info, read <a href="https://docs.oracle.com/cd/E36500_01/E36502/html/qs-guest-additions.html">Installing the VirtualBox Guest Additions</a>.</p>
+
+    <h4>Home directory encryption</h4>
+      <p>Benchmarks have demonstrated that, in most cases, home directory encryption is slower than full disk encryption.</p>
+
+      <p>The move to systemd caused a regression in ecrypts which is responsible for mounting/unmounting encrypted home directories when you login and logout. Because of this issue, please be aware that in Mint 20 and newer releases, your encrypted home directory is no longer unmounted on logout: <a href="https://bugs.launchpad.net/ubuntu/+source/gnome-session/+bug/1734541">https://bugs.launchpad.net/ubuntu/+source/gnome-session/+bug/1734541</a>.</p><p>
+
+    </p><h4>Guest sessions</h4>
+
+      <p>You can still enable guest sessions in the "Login Window" utility, but this option is now disabled by default.</p>
+
+  <h4>Touchpad drivers</h4>
+
+      <p>The default touchpad driver in this edition is "libinput" (provided by the xserver-xorg-input-libinput package).</p>
+
+      <p>If you experience problems with it, you can switch to another driver called "synaptics" (provided by the xserver-xorg-input-synaptics package).</p>
+
+      <p>To know which driver is used by your input devices, run the following command:</p>
+
+      <p><code>grep -i "Using input driver" /var/log/Xorg.0.log</code></p>
+
+      <p>When both drivers are installed, "synaptics" takes priority.</p>
+
+      <p>To switch to the "synaptics" driver, install it with the command:</p>
+
+      <p><code>apt install xserver-xorg-input-synaptics</code></p>
+
+      <p>Then log out and log back in.</p>
+
+      <p>To go back to using "libinput", simply remove the "synaptics" driver:</p>
+
+      <p><code>apt remove xserver-xorg-input-synaptics</code></p>
+
+      <p>Then log out and log back in.</p>
+
+      <p>Note: You can also try installing the "evdev" driver (provided by the xserver-xorg-input-evdev).</p>
+
+    <h4>Wine</h4>
+
+      <p>To install the complete version of WINE, open a terminal and type:</p>
+
+        <p><code>apt install wine-installer</code></p>
+
+      <p>Among other things, this will install wine-desktop-files, which adds menu entries for regedit, your C:\ drive and other items which are missing from upstream WINE.</p>
+
+    <h4>Sound and microphone issues</h4>
+      <p>If you're facing issues with your microphone or your sound output, please install "pavucontrol".</p>
+      <p>This will add "PulseAudio Volume Control" to your menu. This application has more configuration options than the default volume control.</p>
+
+    <h4>DVD Playback with VLC</h4>
+      <p>If VLC does not find your DVD player, click on Media-&gt;Open Disc, and specify '/dev/sr0' as the disc device.</p>
+
+  <h4>Other issues</h4>
+    <p>Linux Mint 20 is based on Ubuntu 20.04. Make sure to read the <a href="https://wiki.ubuntu.com/FocalFossa/ReleaseNotes">Ubuntu release notes</a>.</p>
+
+  <h2 class="mb-4 text-primary">Tips</h2>
+
+    <h4>Username and password in the live session</h4>
+
+      <p>In the live session, the username is "mint" and the password is empty (i.e. just press Enter if asked for a password).</p>
+
+    <h4>Moving windows which don't fit in the screen</h4>
+      <p>If your screen resolution is too low, some windows might not fit in the screen.</p>
+      <p>While pressing the ALT key, you can grab any part of a window with the mouse and move it across the screen.</p>
+
+    <h4>Installing multimedia codecs offline</h4>
+      <p>To download the multimedia codecs into an installable archive:</p>
+       <p> <ul>
+          <li>Boot from the Linux Mint ISO on a computer which is connected to the Internet</li>
+          <li>Open a terminal and type "apt download mint-meta-codecs" (without the quotes)</li>
+          <li>This creates a "mint-meta-codecs.tgz" archive</li>
+        </ul>
+    </p>
+      <p>On computers which do not have an Internet access, you can decompress this archive and run ./install.sh (or alternatively "sudo dpkg -i *.deb") to install the multimedia codecs.</p>
+
+    <h4>Solving freezes during the boot sequence</h4>
+
+      <p>Some graphics cards don't work well with the open-source driver present in Linux Mint.</p>
+
+      <p>If Linux Mint freezes during boot time, use the "Compatibility Mode" boot option.</p>
+
+      <p>In this mode you should be able to boot Linux Mint and install it on your computer.</p>
+
+      <p>After the installation, reboot the computer and wait for the boot menu to appear.</p>
+
+      <p>Add the "nomodeset" option as illustrated below:</p>
+
+      <p><center>
+      <video controls="" width="500">
+        <source src="/pictures/screenshots/rosa/nomodeset_grub.webm" type="video/webm">
+        <track src="/pictures/screenshots/rosa/nomodeset_grub.vtt" kind="subtitles" srclang="en" label="English" default="">
+          Your browser does not support the video tag.
+      </video>
+      </center>
+  </p>
+
+      <p>If your graphics card is from NVIDIA, once in Linux Mint, perform the following steps to install the NVIDIA drivers:</p>
+      <p><ul>
+        <li>Run the Driver Manager</li>
+        <li>Choose the NVIDIA drivers and wait for them to be installed</li>
+        <li>Reboot the computer</li>
+      </ul></p>
+
+      <p>With these drivers the system should now be stable and you no longer need to use "nomodeset".</p>
+      <p>Note: If you're using an Optimus card, you've nothing more to do. Upon reboot, a system tray icon should show up indicating which GPU is currently active. Click on it to switch GPUs.</p>
+      <p>Note: If you still cannot boot try one of the following solutions:</p>
+      <p><ul>
+        <li>Try with "nouveau.noaccel=1" instead of "nomodeset".</li>
+        <li>Try with "noapic noacpi nosplash irqpoll" instead of "quiet splash".</li>
+        <li>After the installation, use "Advanced Options" -&gt; "Recovery mode" from the boot menu and choose "resume".</li>
+      </ul></p>
+
+    <h4>Choosing the right version of Linux Mint</h4>
+      <p>Each new version comes with a new kernel and a newer set of drivers. Most of the time, this means newer versions are compatible with a larger variety of hardware components, but sometimes it might also introduce regressions. If you are facing hardware issues with the latest version of Linux Mint and you are unable to solve them, you can always try an earlier release. If that one works better for you, you can stick to it, or you can use it to install Linux Mint and then upgrade to the newer release.</p>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<include src="mint-section-sponsors.html"/>
+<include src="mint-section-footer.html"/>

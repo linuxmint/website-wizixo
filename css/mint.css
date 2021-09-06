@@ -17,6 +17,17 @@
     width: 24px;
 }
 
+code {
+    padding: .2em .4em;
+    margin: 0;
+    margin-left: 20px;
+    background-color: rgba(175,184,193,0.2);
+    color: black;
+    border-radius: 6px;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
 .partner-flag {
     width: 22px;
 }
