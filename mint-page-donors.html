@@ -5,163 +5,172 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mb-5">
-
                 <h2 class="mb-4 text-primary">Donating to Linux Mint</h2>
+            </div>
+            <div class="col-6">
+                <center>
+                    <div style="width: 500px;">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </center>
 
-                <div class="col-sm-12 mb-5">
+                <div class="text-center text-primary mt-2">
+                    <strong>So far this month: $3,910 (166 donations)</strong>
+                </div>
+
+            </div>
+            <div class="col-6">
+                <p>We believe Linux Mint can gather the momentum and the community necessary to fund itself entirely through donations, sponsoring and advertisement without the need to engage in commercial activities and without focusing on anything else than improving the distribution itself.</p>
+
+                <p>The donations we receive range from a single dollar to a couple of hundreds. The important thing is for people to give something, and for us to generate the income that will let us work and succeed on this project, month after month.</p>
+
+                <p>If you want to help and if you can do so please make a donation to the project and encourage others to do so.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <h2 class="mb-4 text-primary">How to donate</h2>
+
+            </div>
+
+            <div class="col-6">
+
+                <h4>Paypal or Debit/Credit Card</h4>
+
+                <!-- https://www.html-code-generator.com/css/button-generator -->
+
+                <p>You can make a donation in $USD or in Euro:</p>
+
+                 <a class="paypal-button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8N99QGNCCJXL4&amp;source=url">
+                  <span class="paypal-button-icon"><span class="fa fa-dollar" aria-hidden="true"></span></span>
+                  <span class="paypal-button-text">Make a donation in USD</span>
+                 </a>
+
+                 <a class="paypal-button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YL7C4Y6CB8MM6&amp;source=url">
+                  <span class="paypal-button-icon"><span class="fa fa-euro" aria-hidden="true"></span></span>
+                  <span class="paypal-button-text">Make a donation in EUR</span>
+                 </a>
+
+                <p>To donate in another currency choose to donate in Euro. Paypal will automatically convert the currency during the transaction.</p>
+            </div>
+            <div class="col-6">
+
+                <h4>Patreon</h4>
+
+                <p>Alternatively you can set up a monthly donation via Patreon:</p>
+
+                 <a class="patreon-button" href="https://www.patreon.com/bePatron?u=13897391">
+                  <span class="patreon-button-icon"><span class="fa fa-coffee" aria-hidden="true"></span></span>
+                  <span class="patreon-button-text">Become a patron</span>
+                 </a>
+             </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h4>Crypto-currencies</h4>
+
+                    <p>Or you can donate anonymously to Linux Mint using crypto-currencies.</p>
 
                     <ul class="nav nav-tabs tab-line">
-                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#tab1"> STATS </a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab2"> WHY DONATE </a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab3"> HOW TO DONATE </a> </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane show active" id="tab1">
-
-
-
-                    </div>
-
-                    <div class="tab-pane" id="tab2">
-
-
-
-                    </div>
-
-                    <div class="tab-pane" id="tab3">
-
-
-
-                    </div>
-                </div>
-
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js@3/dist/chart.min.js"></script>
-                    <center><div style="width: 500px;"><canvas id="myChart"></canvas></div></center>
-                    <script>
-                    var ctx = document.getElementById("myChart");
-                    var myChart = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-
-                            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                            datasets: [
-                                {
-                                label: '2019',
-                                backgroundColor: '#f4f5f6',
-                                borderColor: '#cfd1d4',
-                                borderWidth: 1,
-                                data: [10567, 11216, 9279, 24170, 11825, 6609, 13164, 10817, 8908, 8749, 10164, 25352]
-                                },
-                                {
-                                label: '2020',
-                                backgroundColor: '#5cbf7d',
-                                borderColor: '#5cbf7d',
-                                borderWidth: 1,
-                                data: [14290, 11303, 9499, 14812, 14879, 20710, 14555, 11304, 10727, 10698, 12228, 23829]
-                                },
-                                {
-                                label: '2021',
-                                backgroundColor: '#0392ed',
-                                borderColor: '#d6ecfb',
-                                borderWidth: 1,
-                                data: [18779, 14397, 12044, 11218]
-                                }
-                            ]
-                        },
-                        options: {
-                            interaction: {
-                                mode: 'point'
-                            },
-                            plugins: {
-                                title: {
-                                    display: true,
-                                    text: 'Money raised via donations'
-                                },
-                                tooltip: {
-                                    enabled: true,
-                                    callbacks: {
-                                        label: function(context) {
-                                            var label = context.dataset.label || '';
-
-                                            if (label) {
-                                                label += ': ';
-                                            }
-                                            if (context.parsed.y !== null) {
-                                                label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0}).format(context.parsed.y);
-                                            }
-                                            return label;
-                                        }
-                                    }
-                                }
-                            },
-                            scales: {
-                                y: {
-                                    ticks: {
-                                        // Include a dollar sign in the ticks
-                                        callback: function(value, index, values) {
-                                            value = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0}).format(value);
-                                            return value;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    });
-                    </script>
-
-                    <div class="text-center text-primary mt-2"><strong>So far this month: $3,910 (166 donations)</strong></p>
-
-                </div>
-
-
-
-                <div class="accordion mb-0 accordion-grad" id="accordion1">
-
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            <a class="h6 mb-0" data-toggle="collapse" href="#collapse-100">Why donate money?</a>
+                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#tab1"><i class="cf cf-btc"></i> BTC </a> </li>
+                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab2"><i class="cf cf-eth"></i> ETH </a> </li>
+                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab3"><i class="cf cf-ltc"></i> LTC </a> </li>
+                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab4"><i class="cf cf-bch"></i> BCH </a> </li>
+                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab5"><i class="cf cf-xmr"></i> XMR </a> </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="tab1">
+                            <center>
+                                <p>To donate in <b><i class="cf cf-btc"></i> Bitcoin</b> use the following address:<p>
+                                <p><b>13JszmQDACVvb6XxPwEb1TzzCyoooQ9WKH</b></p>
+                                <img src="img/crypto/btc_qr.png" style="max-height: 250px;"/>
+                            </center>
                         </div>
-                        <div class="collapse show" id="collapse-100" data-parent="#accordion1">
-                            <div class="accordion-content">
-                                <p>Linux Mint is free of cost and doesn't generate any direct sort of income. It is funded by advertising, sponsoring and donations and although it is financially supported by its own community of users, its ambition is to compete with projects which are backed by large companies such as Microsoft, Apple, RedHat, Novell and Canonical.</p>
-                            </div>
+                        <div class="tab-pane" id="tab2">
+                            <center>
+                                <p>To donate in <b><i class="cf cf-eth"></i> Ethereum</b> use the following address:<p>
+                                <p><b>0xc9D8c1Ff647aA12CAb8f48bed91A22206de8B71a</b></p>
+                                <img src="img/crypto/eth_qr.png" style="max-height: 250px;"/>
+                            </center>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            <center>
+                                <p>To donate in <b><i class="cf cf-ltc"></i> Litecoin</b> use the following address:<p>
+                                <p><b>LW1Zckzn9Y6baEvhoo2tGBJJa5YLXXD1B2</b></p>
+                                <img src="img/crypto/ltc_qr.png" style="max-height: 250px;"/>
+                            </center>
+                        </div>
+                        <div class="tab-pane" id="tab4">
+                            <center>
+                                <p>To donate in <b><i class="cf cf-bch"></i> Bitcoin Cash</b> use the following address:<p>
+                                <p><b>1LWUeqUytfVYD7ZWYVC5sHmbd3EHKF69az</b></p>
+                                <img src="img/crypto/bch_qr.png" style="max-height: 250px;"/>
+                            </center>
+                        </div>
+                        <div class="tab-pane" id="tab5">
+                            <center>
+                                <p>To donate in <b><i class="cf cf-xmr"></i> Monero</b> use the following address:<p>
+                                <p><b>45ZzMXudMd7RpCGLAwxJxpiccddpVdYmgc5ZV1vL9xhJUN6AK4hY8nEhCJfaT8b81n6wiS32UZSJYMQRxHxACxNDCYzXsew</b></p>
+                                <img src="img/crypto/xmr_qr.png" style="max-height: 250px;"/>
+                            </center>
                         </div>
                     </div>
 
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-101">How is the money used?</a>
-                        </div>
-                        <div class="collapse" id="collapse-101" data-parent="#accordion1">
-                            <div class="accordion-content">
-                                <p>The money is used to finance the needs of the distribution, to pay for hosting, to advertise on other websites, to purchase equipment and to fund the work of the people behind it.</p>
-                            </div>
-                        </div>
+                <p>Note: Patrons and crypto-donations are anonymous and not listed on this page. Paypal donations are semi-anonymous, by default only your first name and the first letter of your surname will appear.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h2 class="mb-4 text-primary">Latest donors</h2>
+
+                <div class="col-sm-12 overflow-auto" style="max-height: 500px;">
+                    <div class="table-responsive-sm">
+                        <table class="table table-lg table-bordered table-striped text-nowrap">
+                            <thead class="all-text-white bg-grad">
+                                <tr class="text-uppercase">
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Donor</th>
+                                    <th scope="col">Amount donated</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2021-09-06</td>
+                                    <td><img src="img/flags/gb.png" class="flag" title="United Kingdom"/>&nbsp;&nbsp;Bryan F.</td>
+                                    <td>$20 (37th donation)</td>
+                                </tr>
+                                <tr>
+                                    <td>2021-09-05</td>
+                                    <td><img src="img/flags/us.png" class="flag" alt="USA"/>&nbsp;&nbsp;Andrew E.</td>
+                                    <td>$20 (3rd donation)</td>
+                                </tr>
+                                <tr>
+                                    <td>2021-09-05</td>
+                                    <td><img src="img/flags/us.png" class="flag" alt="USA"/>&nbsp;&nbsp;<a href="http://www.rsiegler.org/"/>Ralph Siegler aka "ziggy"</a></td>
+                                    <td>$250 (27th donation)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-102">How much should you give?</a>
-                        </div>
-                        <div class="collapse" id="collapse-102" data-parent="#accordion1">
-                            <div class="accordion-content">
-                                <p>The donations we receive range from a single dollar to a couple of hundreds. The important thing for people is to give something, and for us it's to generate the income that will let us work and succeed on this project, month after month. If you want to help, and if you can do so, please make a donation to the project and encourage others to do so.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            <a class="h6 mb-0 collapsed" data-toggle="collapse" href="#collapse-103">What is the long-term plan regarding the funding of Linux Mint?</a>
-                        </div>
-                        <div class="collapse" id="collapse-103" data-parent="#accordion1">
-                            <div class="accordion-content">
-                                <p>We believe Linux Mint can gather the momentum and the community necessary to fund itself entirely through donations, sponsoring and advertisement without the need to engage in commercial activities and without focusing our attention on anything else than improving the distribution itself.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
@@ -170,5 +179,176 @@
     </div>
 </section>
 
-<include src="mint-section-sponsors.html"/>
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h2 class="mb-4 text-primary">Top 10 Countries</h2>
+
+                <div class="col-sm-12 overflow-auto" style="max-height: 500px;">
+                    <div class="table-responsive-sm">
+                        <table class="table table-lg table-bordered table-striped text-nowrap">
+                            <thead class="all-text-white bg-grad">
+                                <tr class="text-uppercase">
+                                    <th scope="col">Country</th>
+                                    <th scope="col">Contribution</th>
+                                    <th scope="col">Average</th>
+                                    <th scope="col">Highest</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/flags/gb.png" class="flag" title="USA"/>&nbsp;&nbsp;USA</td>
+                                    <td>38%</td>
+                                    <td>$27</td>
+                                    <td>$4500</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/flags/gb.png" class="flag" title="USA"/>&nbsp;&nbsp;USA</td>
+                                    <td>38%</td>
+                                    <td>$27</td>
+                                    <td>$4500</td>
+                                </tr>                                <tr>
+                                    <td><img src="img/flags/gb.png" class="flag" title="USA"/>&nbsp;&nbsp;USA</td>
+                                    <td>38%</td>
+                                    <td>$27</td>
+                                    <td>$4500</td>
+                                </tr>                                <tr>
+                                    <td><img src="img/flags/gb.png" class="flag" title="USA"/>&nbsp;&nbsp;USA</td>
+                                    <td>38%</td>
+                                    <td>$27</td>
+                                    <td>$4500</td>
+                                </tr>                                <tr>
+                                    <td><img src="img/flags/gb.png" class="flag" title="USA"/>&nbsp;&nbsp;USA</td>
+                                    <td>38%</td>
+                                    <td>$27</td>
+                                    <td>$4500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h2 class="mb-4 text-primary">Top 100 Donors</h2>
+
+                <div class="col-sm-12 overflow-auto" style="max-height: 500px;">
+                    <div class="table-responsive-sm">
+                        <table class="table table-lg table-bordered table-striped text-nowrap">
+                            <thead class="all-text-white bg-grad">
+                                <tr class="text-uppercase">
+                                    <th scope="col">Donor</th>
+                                    <th scope="col">Number of donations</th>
+                                    <th scope="col">Amount donated</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/flags/us.png" class="flag" title="USA"/>&nbsp;&nbsp;Neil V.</td>
+                                    <td>4</td>
+                                    <td>$9200</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/flags/us.png" class="flag" title="USA"/>&nbsp;&nbsp;Neil V.</td>
+                                    <td>4</td>
+                                    <td>$9200</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/flags/us.png" class="flag" title="USA"/>&nbsp;&nbsp;Neil V.</td>
+                                    <td>4</td>
+                                    <td>$9200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3/dist/chart.min.js"></script>
+<script>
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [
+                {
+                label: '2019',
+                backgroundColor: '#989691',
+                borderColor: '#989691',
+                borderWidth: 1,
+                data: [10567, 11216, 9279, 24170, 11825, 6609, 13164, 10817, 8908, 8749, 10164, 25352]
+                },
+                {
+                label: '2020',
+                backgroundColor: '#97C562',
+                borderColor: '#97C562',
+                borderWidth: 1,
+                data: [14290, 11303, 9499, 14812, 14879, 20710, 14555, 11304, 10727, 10698, 12228, 23829]
+                },
+                {
+                label: '2021',
+                backgroundColor: '#5B7CFF',
+                borderColor: '#5B7CFF',
+                borderWidth: 1,
+                data: [18779, 14397, 12044, 11218]
+                }
+            ]
+        },
+        options: {
+            interaction: {
+                mode: 'point'
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Money raised via donations'
+                },
+                tooltip: {
+                    enabled: true,
+                    callbacks: {
+                        label: function(context) {
+                            var label = context.dataset.label || '';
+
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.y !== null) {
+                                label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0}).format(context.parsed.y);
+                            }
+                            return label;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    ticks: {
+                        // Include a dollar sign in the ticks
+                        callback: function(value, index, values) {
+                            value = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0}).format(value);
+                            return value;
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+
 <include src="mint-section-footer.html"/>

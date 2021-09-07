@@ -124,3 +124,85 @@ code {
 img.greyish {
    filter: sepia(100%) saturate(0%);
 }
+
+.paypal-button {
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 16px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #6494ed 5%, #3467bf 100%);
+    box-shadow: 0px 10px 14px -7px #616174;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+ .paypal-button:hover {
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #3467bf 5%, #6494ed 100%);
+}
+ .paypal-button:active {
+    color: #FFFFFF;
+    position: relative;
+    top: 1px;
+}
+.paypal-button:visited {
+    color: #FFFFFF;
+    position: relative;
+    top: 1px;
+}
+ .paypal-button-text {
+    color: #FFFFFF;
+    padding: 7px 18px;
+    float: left;
+}
+ .paypal-button-icon {
+    color: #FFFFFF;
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+    border-radius: 5px 0 0 5px;
+    padding: 7px 10px;
+    float: left;
+}
+
+ .patreon-button {
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 16px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #ff0000 5%, #c81414 100%);
+    box-shadow: 0px 10px 14px -7px #616174;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+ .patreon-button:hover {
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #c81414 5%, #ff0000 100%);
+}
+ .patreon-button:active {
+    color: #FFFFFF;
+    position: relative;
+    top: 1px;
+}
+.patreon-button:visited {
+    color: #FFFFFF;
+    position: relative;
+    top: 1px;
+}
+ .patreon-button-text {
+    color: #FFFFFF;
+    padding: 7px 18px;
+    float: left;
+}
+ .patreon-button-icon {
+    color: #FFFFFF;
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+    border-radius: 5px 0 0 5px;
+    padding: 7px 10px;
+    float: left;
+}
