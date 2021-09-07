@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,28 +40,6 @@
        width="419.46701"
        height="401.61401"
        filterUnits="userSpaceOnUse">
-      <feFlood
-         flood-opacity="0"
-         result="BackgroundImageFix"
-         id="feFlood13" />
-      <feColorMatrix
-         in="SourceAlpha"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-         id="feColorMatrix15" />
-      <feOffset
-         dy="10"
-         id="feOffset17" />
-      <feGaussianBlur
-         stdDeviation="15"
-         id="feGaussianBlur19" />
-      <feColorMatrix
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-         id="feColorMatrix21" />
-      <feBlend
-         mode="normal"
-         in2="BackgroundImageFix"
-         result="effect1_dropShadow"
-         id="feBlend23" />
       <feBlend
          mode="normal"
          in="SourceGraphic"
@@ -91,13 +69,13 @@
      inkscape:window-height="1355"
      id="namedview18"
      showgrid="false"
-     inkscape:zoom="0.72460938"
-     inkscape:cx="-240.12938"
-     inkscape:cy="-149.46929"
+     inkscape:zoom="5.796875"
+     inkscape:cx="193.53286"
+     inkscape:cy="60.059342"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg16" />
+     inkscape:current-layer="g6" />
   <g
      transform="matrix(0.35358284,0,0,0.35358284,181.8185,-5.756332)"
      style="filter:url(#filter0_d)"
@@ -106,26 +84,21 @@
        clip-path="url(#clip0)"
        id="g6">
       <path
-         style="fill:#a8adb1;fill-opacity:1"
-         inkscape:connector-curvature="0"
-         d="m 209.846,362.409 c -99.208,0 -179.676,-76.472 -179.676,-170.753 0,-94.28 80.468,-170.752 179.676,-170.752 99.207,0 179.675,76.472 179.675,170.752 0,94.281 -80.468,170.753 -179.675,170.753 z"
+         style="fill:#495057;fill-opacity:1;stroke:none;stroke-width:0.34516421;stroke-opacity:1;"
+         d="M 256.01562 1.5957031 C 221.77257 1.5957031 193.99805 27.991122 193.99805 60.533203 C 193.99805 93.075629 221.77257 119.4707 256.01562 119.4707 C 290.25833 119.4707 318.0332 93.075629 318.0332 60.533203 C 318.0332 27.991122 290.25833 1.5957031 256.01562 1.5957031 z M 220.73633 27.097656 L 244.15625 27.097656 L 255.95312 38.308594 L 267.75 27.097656 L 291.16992 27.097656 L 291.16992 94.03125 L 267.75 94.03125 L 267.75 58.585938 L 255.95312 69.796875 L 244.15625 58.585938 L 244.15625 94.03125 L 220.73633 94.03125 L 220.73633 71.775391 L 220.73633 27.097656 z "
+         transform="matrix(2.8971718,0,0,2.8971718,-531.8765,16.28001)"
          id="path2" />
-      <path
-         style="fill:#ffffff"
-         inkscape:connector-curvature="0"
-         d="m 107.637,224.225 v 64.481 h 67.851 V 186.013 l 34.177,32.48 34.177,-32.48 v 102.693 h 67.851 V 94.784 h -67.851 l -34.177,32.48 -34.177,-32.48 h -67.851 z"
-         id="path4" />
     </g>
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:57.12218857px;line-height:125%;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#a8adb1;fill-opacity:1;stroke:none;stroke-width:1.07104099px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:57.12218857px;line-height:125%;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#495057;fill-opacity:1;stroke:none;stroke-width:1.07104099px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
      x="50.771507"
      y="160.1725"
      id="text988"><tspan
        sodipodi:role="line"
        x="50.771507"
        y="160.1725"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.98553467px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#a8adb1;fill-opacity:1;stroke-width:1.07104099px"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.98553467px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#495057;fill-opacity:1;stroke-width:1.07104099px;"
        id="tspan990">SimpleMobileTools</tspan></text>
 </svg>

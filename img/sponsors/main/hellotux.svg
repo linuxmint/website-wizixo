@@ -21,7 +21,7 @@
    height="186"><metadata
    id="metadata207"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs205" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -32,13 +32,13 @@
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
    inkscape:window-width="2560"
-   inkscape:window-height="1415"
+   inkscape:window-height="1355"
    id="namedview203"
    showgrid="false"
    inkscape:zoom="1.9079027"
-   inkscape:cx="154.97714"
+   inkscape:cx="519.33077"
    inkscape:cy="85.558056"
-   inkscape:window-x="2560"
+   inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
    inkscape:current-layer="g148" />
@@ -422,7 +422,7 @@
 	
 <text
    xml:space="preserve"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:101.61126709px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#a8adb1;fill-opacity:1;stroke:none;stroke-width:2.54028177px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:101.61126709px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#495057;fill-opacity:1;stroke:none;stroke-width:2.54028177px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
    x="-1.2560469"
    y="86.58564"
    id="text921"><tspan
@@ -430,11 +430,12 @@
      id="tspan919"
      x="-1.2560469"
      y="86.58564"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';letter-spacing:-7.62084532px;fill:#a8adb1;fill-opacity:1;stroke-width:2.54028177px"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';letter-spacing:-7.62084532px;fill:#495057;fill-opacity:1;stroke-width:2.54028177px;"
      dx="0">HELLOTUX</tspan></text>
+
 <text
    xml:space="preserve"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.19318008px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#a8adb1;fill-opacity:1;stroke:none;stroke-width:0.95482951px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.19318008px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#495057;fill-opacity:1;stroke:none;stroke-width:0.95482951px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
    x="3.2539721"
    y="144.36371"
    id="text944"><tspan
@@ -442,7 +443,8 @@
      id="tspan942"
      x="3.2539721"
      y="144.36371"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:-0.95482951px;stroke-width:0.95482951px;fill:#a8adb1;fill-opacity:1;">PROMOTING FREE SOFTWARE</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:-0.95482951px;stroke-width:0.95482951px;fill:#495057;fill-opacity:1;">PROMOTING FREE SOFTWARE</tspan></text>
+
 </g>
 
 </svg>
