@@ -1,7 +1,7 @@
 # Main Website
 
 <p align="center">
-  <img src="./wizixo/template/img/logo.svg" height="100" style="border-radius: 6px" />
+  <img src="./img/logo.svg" height="100" style="border-radius: 6px" />
 </p>
 
 <p align="center">
