@@ -1,7 +1,7 @@
 # Main Website
 
 <p align="center">
-  <img src="./wizixo/template/img/logo.svg" height="100" style="border-radius: 6px" />
+  <img src="./img/logo.svg" height="100" style="border-radius: 6px" />
 </p>
 
 <p align="center">
@@ -261,6 +261,6 @@ The resulting `mint-privacy.html` page is what we can open with our Web browser.
 
 <div align="center">
 
- <img src="./wizixo/template/img/favicon.ico" height="50" style="border-radius: 6px" />
+ <img src="./img/favicon.ico" height="50" style="border-radius: 6px" />
 
 </div>
